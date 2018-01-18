@@ -953,7 +953,7 @@
         "name": "Login Wizard Builder",
         "instance": "LoginWizardBuilder",
         "parameters": {
-            "reloadOnSuccess": true,
+            "reloadOnSuccess": false,
             "reloadUrl": "",
             "metadata": {
                 "class": "DecisionNode",
