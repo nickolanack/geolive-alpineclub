@@ -1096,8 +1096,8 @@
             "widgetTitle": "mapbox",
             "target": "mapbox",
             "templateName": "mapbox",
-            "styleUrl": "",
-            "accessToken": "",
+            "styleUrl": "mapbox:\/\/styles\/joncorbett\/cjcb0uuqv0vqd2rnw1onaoabw",
+            "accessToken": "XXXX-XXXX",
             "readAccess": "public"
         }
     },
