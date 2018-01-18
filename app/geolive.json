@@ -243,7 +243,7 @@
         "name": "Flexible Height Widget",
         "instance": "FlexibleHeight",
         "parameters": {
-            "offset": 220,
+            "offset": 225,
             "customScript": "",
             "widgetTitle": "",
             "target": "map.1",
