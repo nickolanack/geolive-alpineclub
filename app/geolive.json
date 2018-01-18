@@ -1095,6 +1095,9 @@
         "parameters": {
             "widgetTitle": "mapbox",
             "target": "mapbox",
+            "templateName": "mapbox",
+            "styleUrl": "",
+            "accessToken": "",
             "readAccess": "public"
         }
     },
