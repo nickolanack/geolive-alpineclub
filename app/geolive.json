@@ -1101,6 +1101,41 @@
     "widget.24": {
         "name": "Detail View",
         "instance": "DetailView",
-        "parameters": {}
+        "parameters": {
+            "metadata": {
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "mainView.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            "mainView.metadata.positions.content.modules.0.json"
+                        ]
+                    },
+                    "footer": {
+                        "modules": [
+                            "mainView.metadata.positions.footer.modules.0.json"
+                        ]
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                }
+            },
+            "templateName": "mainView",
+            "onRenderApplictionScript": "",
+            "requireTarget": true,
+            "widgetTitle": "mainView",
+            "target": "mainView",
+            "readAccess": "public"
+        }
     }
 }
