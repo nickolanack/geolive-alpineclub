@@ -1,0 +1,53 @@
+[
+    {
+        "id": "1",
+        "name": "markerAttributes",
+        "description": "",
+        "label": "",
+        "suffix": "_9231",
+        "metadata": {
+            "title": "markerAttributes",
+            "readAccess": "public",
+            "appliesTo": [
+                "marker"
+            ],
+            "id": "1",
+            "suffix": "_9231",
+            "description": "",
+            "fields": [
+                {
+                    "visibility": "public",
+                    "tableId": "1",
+                    "tableName": "markerAttributes",
+                    "tableSuffix": "_9231",
+                    "title": "type",
+                    "label": "Type",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ]
+        }
+    }
+]

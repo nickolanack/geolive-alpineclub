@@ -1,0 +1,34 @@
+<?php 
+
+
+$config=GetWidget('mobile-app-config');
+$params=$config->getParameter("parameters", (object) array());
+foreach($params as $opts){
+    $key=$opts->name;
+    if(strpos($key, '-color-active')!==false){
+       
+        ?>
+        
+        .page.form .iconselect .icon.value-<?php echo str_replace("-color","", str_replace("-active",".selected",$key));?>{
+            background-color:<?php echo $config->getParameter($key); ?>;
+            background-color:rgba(<?php 
+            
+                echo str_replace("rgb(","", str_replace(")","",$config->getParameter($key))); 
+            
+            ?>,<?php 
+            
+                echo (strpos($key,'-active')!==false)?1.0:0.1; 
+            
+            ?>);
+        }
+        
+        <?php
+       
+       
+    }
+    
+    
+}
+
+
+?>

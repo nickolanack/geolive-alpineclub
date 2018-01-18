@@ -1,0 +1,41 @@
+html{
+    height:100%;
+}
+
+body{
+    background-image:url("<?php 
+    
+        $image=GetWidget('site-config')->getParameter('siteImage')[0];
+        echo $image;
+    ?>");
+    
+    background-size:cover;
+    background-image:none;
+}
+
+hr {
+    border-color: #0088cc;
+}
+
+
+
+pre.code-hr, pre.code-ft {
+    border: none;
+}
+
+
+
+.uic .label, .ui-ctrl .label, .cp-section-title {
+    color: black;
+    background: none;
+    font-weight: 100;
+    font-size: 19px;
+    text-indent: 0;
+    line-height: 25px;
+    padding: 0;
+}
+
+main#content .side-bar-menu {
+    padding-top: 85px;
+    padding-left: 35px;
+}

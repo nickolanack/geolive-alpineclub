@@ -1,0 +1,1105 @@
+{
+    "plugin.1": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
+    "plugin.2": {
+        "name": "Deploy",
+        "instance": "Deploy",
+        "parameters": "_Deploy.json"
+    },
+    "plugin.3": {
+        "name": "Email",
+        "instance": "Email",
+        "parameters": {}
+    },
+    "plugin.4": {
+        "name": "Events",
+        "instance": "Events",
+        "parameters": {}
+    },
+    "plugin.5": {
+        "name": "External Content",
+        "instance": "ExternalContent",
+        "parameters": {}
+    },
+    "plugin.6": {
+        "name": "Filesystem",
+        "instance": "Filesystem",
+        "parameters": {
+            "enableFileMetadataCache": true,
+            "showDropboxImagePicker": false,
+            "dropbox-app-key": "",
+            "uploadViewInlineCss": "",
+            "uploadViewPageScript": "",
+            "enableFileAttributes": false,
+            "fileAttributesTableName": "filesystemAttributes"
+        }
+    },
+    "plugin.7": {
+        "name": "Google Maps",
+        "instance": "GoogleMaps",
+        "parameters": {}
+    },
+    "plugin.8": {
+        "name": "Language",
+        "instance": "Language",
+        "parameters": {}
+    },
+    "plugin.9": {
+        "name": "Links",
+        "instance": "Links",
+        "parameters": {}
+    },
+    "plugin.10": {
+        "name": "Search Plugin",
+        "instance": "Search",
+        "parameters": {}
+    },
+    "plugin.11": {
+        "name": "System Parameters",
+        "instance": "SystemParameters",
+        "parameters": {
+            "JSFileObfuscationEnabled": false,
+            "JSInlineObfuscationEnabled": false,
+            "CSSFileObfuscationEnabled": false,
+            "CSSInlineObfuscationEnabled": false,
+            "PHPDebugEnabled": true,
+            "JSDebugEnabled": true,
+            "CachingEnabled": false,
+            "ExternalizeWidgetScripts": true,
+            "PrettyPrintJson": true,
+            "showFrontEndEditButtons": true,
+            "JSCacheObfuscationEnabled": false,
+            "phase": "production",
+            "ForceHTTPS": false,
+            "allowProxiesFrom": [
+                "*",
+                ""
+            ],
+            "pluginPaths": [
+                ""
+            ],
+            "widgetPaths": [
+                ""
+            ],
+            "modulePaths": [
+                ""
+            ],
+            "sandboxDomains": [
+                "*.z.geolive.ca",
+                "*.s22.ok.ubc.ca",
+                ""
+            ]
+        }
+    },
+    "plugin.12": {
+        "name": "Upgrade",
+        "instance": "Upgrade",
+        "parameters": {
+            "releaseServer": "https:\/\/release.geolive.ca",
+            "releasePackage": "master",
+            "autoUpdate": false
+        }
+    },
+    "plugin.13": {
+        "name": "User Interface",
+        "instance": "UserInterface",
+        "parameters": {
+            "defaultRoute": {
+                "view": "plugin",
+                "plugin": "UserInterface",
+                "pluginView": "front"
+            }
+        }
+    },
+    "plugin.14": {
+        "name": "Users",
+        "instance": "Users",
+        "parameters": {}
+    },
+    "plugin.15": {
+        "name": "Monolog Plugin",
+        "instance": "Monolog",
+        "parameters": {
+            "logPath": "{front}\/..\/logs",
+            "logToSentry": false
+        }
+    },
+    "plugin.16": {
+        "name": "Sentry IO Error reporting",
+        "instance": "SentryIO",
+        "parameters": {
+            "clientSecretUrl": "XXXX-XXXX",
+            "clientPublicUrl": "https:\/\/bb9c64946b61465786057d9d2ebfc92a@sentry.io\/214701",
+            "enabled": false
+        }
+    },
+    "plugin.17": {
+        "name": "Maps",
+        "instance": "Maps",
+        "parameters": {
+            "enableLayerSyncronization": true,
+            "onlyShowMarkersInIconset": false,
+            "tileCachePath": "",
+            "googleMapsServerApiKey": "",
+            "layerDisplayFilterScript": "",
+            "formatMapitemScript": "plugin.Maps.17.formatMapitemScript.js"
+        }
+    },
+    "plugin.18": {
+        "name": "Attributes",
+        "instance": "Attributes",
+        "parameters": {},
+        "attributes": "plugin.Attributes.18.attributes.json"
+    },
+    "plugin.19": {
+        "name": "Mobile Device Interface",
+        "instance": "IOSApplication",
+        "parameters": {
+            "registrationType": "create",
+            "messageDomain": "mobile.",
+            "applicationSettings": {
+                "applicationName": "Map Collect",
+                "visibleLayers": [
+                    "user"
+                ],
+                "forms": {
+                    "name": "form",
+                    "button": "Report Violation"
+                },
+                "form": {
+                    "layer": 11,
+                    "media": [
+                        "image",
+                        "video"
+                    ],
+                    "icon": "DEFAULT",
+                    "attributes": []
+                }
+            },
+            "requireProvisioningKey": true,
+            "provisioningKey": "XXXX-XXXX"
+        }
+    },
+    "plugin.20": {
+        "name": "Slack Monitor",
+        "instance": "SlackMonitor",
+        "parameters": "_SlackMonitor.json"
+    },
+    "plugin.21": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
+    "widget.1": {
+        "name": "Content",
+        "instance": "CustomContent",
+        "parameters": {
+            "customScript": "Front.customScript.js",
+            "widgetTitle": "Front",
+            "target": "front",
+            "readAccess": "public"
+        }
+    },
+    "widget.2": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "customCSS": "Site Style.customCSS.css",
+            "widgetTitle": "Site Style",
+            "target": "main-style",
+            "readAccess": "public"
+        }
+    },
+    "widget.3": {
+        "name": "Configuration",
+        "instance": "Configuration",
+        "parameters": {
+            "contentTemplate": "",
+            "comments": "",
+            "parameters": {
+                "siteImage": {
+                    "type": "images",
+                    "name": "siteImage",
+                    "default": [],
+                    "label": "Site Image",
+                    "maxHeight": 256,
+                    "maxWidth": 400,
+                    "limit": 1
+                }
+            },
+            "hello": "World",
+            "widgetTitle": "Site Configuration",
+            "target": "site-config",
+            "readAccess": "public",
+            "siteImage": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/D6I_rKE_Btg_[G]_[ImAgE].png"
+            ]
+        }
+    },
+    "widget.4": {
+        "name": "Flexible Height Widget",
+        "instance": "FlexibleHeight",
+        "parameters": {
+            "offset": 100,
+            "customScript": "",
+            "widgetTitle": "",
+            "target": "map.1",
+            "readAccess": "public"
+        }
+    },
+    "widget.5": {
+        "name": "Search Engine Optimization Helper",
+        "instance": "SearchEngineOptimizationHelper",
+        "parameters": {}
+    },
+    "widget.6": {
+        "name": "Configuration",
+        "instance": "Configuration",
+        "parameters": {
+            "contentTemplate": "",
+            "comments": "",
+            "parameters": {
+                "appLogo": {
+                    "type": "images",
+                    "name": "appLogo",
+                    "default": [],
+                    "label": "Splash Screen",
+                    "maxHeight": 256,
+                    "maxWidth": 256,
+                    "limit": 1
+                },
+                "splashScreenDuration": {
+                    "type": "text",
+                    "name": "splashScreenDuration",
+                    "default": "5",
+                    "label": "Splash Screen Duration"
+                },
+                "create-marker": {
+                    "type": "images",
+                    "name": "create-marker",
+                    "default": [],
+                    "label": "Create Marker",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
+                "create-marker-label": {
+                    "type": "text",
+                    "name": "create-marker-label",
+                    "default": "Create Marker",
+                    "label": "create-marker-label"
+                },
+                "record-audio": {
+                    "type": "images",
+                    "name": "record-audio",
+                    "default": [],
+                    "label": "Record Audio",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
+                "preview-audio": {
+                    "type": "images",
+                    "name": "preview-audio",
+                    "default": [],
+                    "label": "Preview Audio",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "remove-media": {
+                    "type": "images",
+                    "name": "remove-media",
+                    "default": [],
+                    "label": "Remove Media",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "map": {
+                    "type": "images",
+                    "name": "map",
+                    "default": [],
+                    "label": "Map",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "map-label": {
+                    "type": "text",
+                    "name": "map-label",
+                    "default": "Map",
+                    "label": "map-label"
+                },
+                "folder": {
+                    "type": "images",
+                    "name": "folder",
+                    "default": [],
+                    "label": "Folder",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "folder-label": {
+                    "type": "text",
+                    "name": "folder-label",
+                    "default": "Timeline",
+                    "label": "folder-label"
+                },
+                "downloads": {
+                    "type": "images",
+                    "name": "downloads",
+                    "default": [],
+                    "label": "Downloads",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "downloads-label": {
+                    "type": "text",
+                    "name": "downloads-label",
+                    "default": "More ...",
+                    "label": "downloads-label"
+                },
+                "dialog-offline-title": {
+                    "type": "text",
+                    "name": "dialog-offline-title",
+                    "default": "Offline Mode",
+                    "label": "dialog-offline-title"
+                },
+                "dialog-offline-message": {
+                    "type": "text",
+                    "name": "dialog-offline-message",
+                    "default": "This app can run offline but will require an internet connection at a later date to submit forms",
+                    "label": "dialog-offline-message"
+                },
+                "dialog-offlineunavailable-title": {
+                    "type": "text",
+                    "name": "dialog-offlineunavailable-title",
+                    "default": "Unable to connect to app server",
+                    "label": "dialog-offlineunavailable-title"
+                },
+                "dialog-offlineunavailable-message": {
+                    "type": "text",
+                    "name": "dialog-offlineunavailable-message",
+                    "default": "This app needs to connect to the internet on first use.",
+                    "label": "dialog-offlineunavailable-message"
+                },
+                "dialog-processqueue-title": {
+                    "type": "text",
+                    "name": "dialog-processqueue-title",
+                    "default": "Sending Offline Forms",
+                    "label": "dialog-processqueue-title"
+                },
+                "dialog-processqueue-message": {
+                    "type": "text",
+                    "name": "dialog-processqueue-message",
+                    "default": "There are {{list.length}} offline forms to submit",
+                    "label": "dialog-processqueue-message"
+                },
+                "dialog-addqueueitem-title": {
+                    "type": "text",
+                    "name": "dialog-addqueueitem-title",
+                    "default": "Form Queued",
+                    "label": "dialog-addqueueitem-title"
+                },
+                "dialog-addqueueitem-message": {
+                    "type": "text",
+                    "name": "dialog-addqueueitem-message",
+                    "default": "This form will be submitted the next time you connect to the internet",
+                    "label": "dialog-addqueueitem-message"
+                },
+                "dialog-submitformerror-title": {
+                    "type": "text",
+                    "name": "dialog-submitformerror-title",
+                    "default": "Failed to submit form",
+                    "label": "dialog-submitformerror-title"
+                },
+                "dialog-submitformerror-message": {
+                    "type": "text",
+                    "name": "dialog-submitformerror-message",
+                    "default": "Don't worry we'll keep trying",
+                    "label": "dialog-submitformerror-message"
+                },
+                "dialog-submitform-title": {
+                    "type": "text",
+                    "name": "dialog-submitform-title",
+                    "default": "Form Submited",
+                    "label": "dialog-submitform-title"
+                },
+                "app-style": {
+                    "type": "text",
+                    "name": "app-style",
+                    "default": "https:\/\/alpine.geolive.ca\/app-style.content",
+                    "label": "app-style"
+                },
+                "survey": {
+                    "type": "images",
+                    "name": "survey",
+                    "default": [],
+                    "label": "Survey",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "about": {
+                    "type": "images",
+                    "name": "about",
+                    "default": [],
+                    "label": "About",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "uploads": {
+                    "type": "images",
+                    "name": "uploads",
+                    "default": [],
+                    "label": "Uploads",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "includes": {
+                    "type": "input.array",
+                    "name": "includes",
+                    "default": [],
+                    "label": "Includes"
+                },
+                "terms": {
+                    "type": "input.script",
+                    "name": "terms",
+                    "default": "",
+                    "label": "terms",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
+                "audio-icon": {
+                    "type": "images",
+                    "name": "audio-icon",
+                    "default": [],
+                    "label": "audio-icon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "video-icon": {
+                    "type": "images",
+                    "name": "video-icon",
+                    "default": [],
+                    "label": "video-icon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "image-icon": {
+                    "type": "images",
+                    "name": "image-icon",
+                    "default": [],
+                    "label": "image-icon",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "wildlife": {
+                    "type": "images",
+                    "name": "wildlife",
+                    "default": [],
+                    "label": "Wildlife",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "wildlife-color": {
+                    "type": "color",
+                    "name": "wildlife-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "wildlife-color"
+                },
+                "wildlife-color-active": {
+                    "type": "color",
+                    "name": "wildlife-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "wildlife-color-active"
+                },
+                "water": {
+                    "type": "images",
+                    "name": "water",
+                    "default": [],
+                    "label": "Water",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "water-color": {
+                    "type": "color",
+                    "name": "water-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "water-color"
+                },
+                "water-color-active": {
+                    "type": "color",
+                    "name": "water-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "water-color-active"
+                },
+                "rocks": {
+                    "type": "images",
+                    "name": "rocks",
+                    "default": [],
+                    "label": "Rocks",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "rocks-color": {
+                    "type": "color",
+                    "name": "rocks-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "rocks-color"
+                },
+                "rocks-color-active": {
+                    "type": "color",
+                    "name": "rocks-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "rocks-color-active"
+                },
+                "plants": {
+                    "type": "images",
+                    "name": "plants",
+                    "default": [],
+                    "label": "Plants",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "plants-color": {
+                    "type": "color",
+                    "name": "plants-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "plants-color"
+                },
+                "plants-color-active": {
+                    "type": "color",
+                    "name": "plants-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "plants-color-active"
+                },
+                "humans": {
+                    "type": "images",
+                    "name": "humans",
+                    "default": [],
+                    "label": "Humans",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "humans-color": {
+                    "type": "color",
+                    "name": "humans-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "humans-color"
+                },
+                "humans-color-active": {
+                    "type": "color",
+                    "name": "humans-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "humans-color-active"
+                },
+                "bragging": {
+                    "type": "images",
+                    "name": "bragging",
+                    "default": [],
+                    "label": "Bragging",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "bragging-color": {
+                    "type": "color",
+                    "name": "bragging-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "bragging-color"
+                },
+                "bragging-color-active": {
+                    "type": "color",
+                    "name": "bragging-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "bragging-color-active"
+                },
+                "snow-and-ice": {
+                    "type": "images",
+                    "name": "snow-and-ice",
+                    "default": [],
+                    "label": "Snow and Ice",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "snow-and-ice-color": {
+                    "type": "color",
+                    "name": "snow-and-ice-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "snow-and-ice-color"
+                },
+                "snow-and-ice-color-active": {
+                    "type": "color",
+                    "name": "snow-and-ice-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "snow-and-ice-color-active"
+                },
+                "vista": {
+                    "type": "images",
+                    "name": "vista",
+                    "default": [],
+                    "label": "Vista",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "vista-color": {
+                    "type": "color",
+                    "name": "vista-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "vista-color"
+                },
+                "vista-color-active": {
+                    "type": "color",
+                    "name": "vista-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "vista-color-active"
+                }
+            },
+            "appLogo": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_kdO_[G]_HqE_8hq.png"
+            ],
+            "splashScreenDuration": "1",
+            "water": [
+                "components\/com_geolive\/users_files\/user_files_23\/Uploads\/wb1_[ImAgE]_D8r_Z1f_[G].png"
+            ],
+            "water-color": "rgb(1, 105, 134)",
+            "water-color-active": "rgb(1, 105, 134)",
+            "create-report": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/Cin_[G]_agc_m6z_[ImAgE].png"
+            ],
+            "create-report-label": "Create Report",
+            "map": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_jBt_Eiq_7Xd.png"
+            ],
+            "map-label": "Map",
+            "folder": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_TW_[ImAgE]_kMg_jYe.png"
+            ],
+            "folder-label": "My Stories",
+            "downloads": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/Gc9_1EX_[G]_3ST_[ImAgE].png"
+            ],
+            "downloads-label": "More",
+            "dialog-offline-title": "Offline Mode",
+            "dialog-offline-message": "This app can run offline but will require an internet connection at a later date to submit forms",
+            "dialog-offlineunavailable-title": "Unable to connect to app server",
+            "dialog-offlineunavailable-message": "This app needs to connect to the internet on first use.",
+            "dialog-processqueue-title": "Sending Offline Forms",
+            "dialog-processqueue-message": "There are {{list.length}} offline forms to submit",
+            "dialog-addqueueitem-title": "Form Queued",
+            "dialog-addqueueitem-message": "This form will be submitted the next time you connect to the internet",
+            "dialog-submitformerror-title": "Failed to submit form",
+            "dialog-submitformerror-message": "Don't worry we'll keep trying",
+            "dialog-submitform-title": "Form Submited",
+            "app-style": "https:\/\/alpine.geolive.ca\/app-style.content",
+            "survey": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_bXM_RXx_93i.png"
+            ],
+            "about": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_DF2_UNL_[ImAgE]_mRh.png"
+            ],
+            "includes": [
+                "mobile-app-markers",
+                ""
+            ],
+            "terms": "<h1>\r\nTerms of Use\r\n<\/h1>\r\n<br\/>\r\nThis Agreement may be amended by {appOwner} from time to time without specific advance notice to you.\r\n<br\/>\r\nThe latest Agreement will be posted on the Application, and you should review the Agreement prior to using the Application.\r\n<br\/>\r\n<h1>\r\n2. Editing, Deleting and Modification\r\n<\/h1>\r\n<br\/>\r\n{appOwner} reserves the right in its sole discretion to edit the Application, including any documents, information or other content appearing on the Application.\r\n<br\/>\r\n<h1>\r\n3. Compliance with Laws\r\n<\/h1>\r\n<br\/>\r\nYou agree to comply with all applicable federal, provincial, and local laws, rules, and regulations, including but not limited to privacy laws or the laws of trespass. Without limiting the foregoing, you agree that you will not use the Application to a private property without permission, and will not otherwise engage in any activity that may result in injury, death, property damage, or liability of any kind. You understand and agree that you have no power to confront or apprehend violators beyond those of any other civilian. You are an extra set of eyes and ears for natural resource enforcement officers.\r\n<br\/>\r\n<h1>\r\n4. Assumption of Risk\r\n<\/h1>\r\n<br\/>\r\nYou agree that your use of the Application is at your own risk. You acknowledge that you are aware of the risks inherent in the use of the Application, including the possibility of physical injury, property damage, or other losses. You nevertheless freely and voluntarily assume these risks.\r\n<br\/>\r\n<h1>\r\n5. Limitation of Liability\r\n<\/h1>\r\n<br\/>\r\nIN NO EVENT SHALL {appOwner} OR ITS OFFICERS, DIRECTORS, EMPLOYEES, VOLUNTEERS AND AGENTS (THE\r\n\u201c{appOwner} PARTIES\u201d) BE LIABLE WHATSOEVER FOR YOUR USE OF THE APPLICATION. IN PARTICULAR, BUT\r\nNOT AS A LIMITATION THEREOF, {appOwner} AND THE {appOwner} PARTIES SHALL NOT BE LIABLE FOR ANY\r\nINDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES, WHETHER BASED ON BREACH OF\r\nCONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE, EVEN IF ADVISED\r\nOF THE POSSIBILITY OF SUCH DAMAGES. THE NEGATION OF DAMAGES SET FORTH ABOVE ARE\r\nFUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN YOU AND {appOwner}. THE\r\nAPPLICATION WOULD NOT BE PROVIDED WITHOUT SUCH LIMITATIONS.\r\n<br\/>\r\n<h1>\r\n6. Disclaimer\r\n<\/h1>\r\n<br\/>\r\n{appOwner} PROVIDES THE APPLICATION \u201cAS IS\u201d, \u201cAS AVAILABLE\u201d AND ALL WARRANTIES, EXPRESS OR\r\n<br\/>\r\nIMPLIED, ARE DISCLAIMED (INCLUDING BUT NOT LIMITED TO THE DISCLAIMER OF ANY IMPLIED\r\n<br\/>\r\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE).\r\n<br\/>\r\n<h1>\r\n7. Indemnification\r\n<\/h1>\r\n<br\/>\r\nYou agree to indemnify, defend and hold {appOwner} and the {appOwner} Parties harmless from any liability, loss, claim and expense, including reasonable legal fees, related to your violation of this Agreement or your use of the Application.\r\n<br\/>\r\n<h1>\r\n8. Use of Information\r\n<\/h1>\r\n<br\/>\r\n{appOwner} reserves the right, and you authorize {appOwner}, to the use and assignment of all information regarding your use of the Application and all information provided by you in any manner consistent with {appOwner}\u2019s privacy policy.\r\n<br\/>\r\n<h1>\r\n9. Non-transferable\r\n<\/h1>\r\n<br\/>\r\nYour right to use the Application is not transferable. Any password or right given to you to obtain access is not transferable.\r\n<br\/>\r\n<h1>\r\n10. Contact Information\r\n<\/h1>\r\n<br\/>\r\nIf you have questions about the Application or this Agreement, please contact {appOwner} at {appName|kebab}@{domain} or {appContactNumber}.\r\n<br\/>",
+            "widgetTitle": "Mobile App Configuration",
+            "target": "mobile-app-config",
+            "readAccess": "public",
+            "wildlife": [
+                "components\/com_geolive\/users_files\/user_files_23\/Uploads\/Oi1_[ImAgE]_[G]_V24_hdh.png"
+            ],
+            "wildlife-color": "rgb(126, 25, 25)",
+            "wildlife-color-active": "rgb(126, 25, 25)",
+            "create-marker": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_lHB_[G]_IhE_fcB.png"
+            ],
+            "create-marker-label": "Add Story",
+            "formatParametersScript": "Mobile App Configuration.formatParametersScript.js",
+            "wildlif": [],
+            "rocks": [
+                "components\/com_geolive\/users_files\/user_files_23\/Uploads\/md_crU_sjw_[G]_[ImAgE].png"
+            ],
+            "rocks-color": "rgb(149, 84, 5)",
+            "rocks-color-active": "rgb(149, 84, 5)",
+            "plants": [
+                "components\/com_geolive\/users_files\/user_files_23\/Uploads\/[ImAgE]_nEX_DRz_NMi_[G].png"
+            ],
+            "plants-color": "rgb(44, 100, 34)",
+            "plants-color-active": "rgb(44, 100, 34)",
+            "humans": [
+                "components\/com_geolive\/users_files\/user_files_23\/Uploads\/Fhd_bpY_[G]_[ImAgE]_LG.png"
+            ],
+            "humans-color": "rgb(200, 71, 2)",
+            "humans-color-active": "rgb(200, 71, 2)",
+            "bragging": [
+                "components\/com_geolive\/users_files\/user_files_23\/Uploads\/qNR_rJh_[G]_[ImAgE]_58.png"
+            ],
+            "bragging-color": "rgb(0, 3, 103)",
+            "bragging-color-active": "rgb(0, 3, 103)",
+            "audio-icon": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_dU5_Sal_Xyh.png"
+            ],
+            "video-icon": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/kGs_[G]_vP_[ImAgE]_WBM.png"
+            ],
+            "image-icon": [],
+            "plans": [],
+            "plans-color": "rgb(0,0,0)",
+            "plans-color-active": "rgb(0,0,0)",
+            "uploads": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/omI_v7u_[G]_8Yp_[ImAgE].png"
+            ],
+            "record-audio": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/3sS_72H_[G]_[ImAgE]_fOo.png"
+            ],
+            "preview-audio": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/Th9_Lz4_[ImAgE]_CAw_[G].png"
+            ],
+            "remove-media": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_3ny_[ImAgE]_q5R_3PI.png"
+            ],
+            "snow-and-ice": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/GrK_iXX_eTQ_[G]_[ImAgE].png"
+            ],
+            "snow-and-ice-color": "rgb(36, 84, 136)",
+            "snow-and-ice-color-active": "rgb(36, 84, 136)",
+            "vista": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/Wef_dmW_gS9_[ImAgE]_[G].png"
+            ],
+            "vista-color": "rgb(251, 211, 10)",
+            "vista-color-active": "rgb(251, 211, 10)"
+        }
+    },
+    "widget.7": {
+        "name": "Named Iconset",
+        "instance": "NamedIconset",
+        "parameters": {
+            "exposeIconset": true,
+            "iconsetName": "mobile-app-markers",
+            "icons": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_BmR_nvp_[G]_XFE.png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_OTs_7F8_4FY_[ImAgE].png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/u4D_6Si_[G]_[ImAgE]_FWZ.png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_S88_tJt_MA3.png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/wjI_jjl_[ImAgE]_xss_[G].png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/sVx_[G]_[ImAgE]_e0t_AHk.png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/DYV_[G]_9im_[ImAgE]_lEI.png",
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/nOS_[ImAgE]_p5M_[G]_BMZ.png"
+            ],
+            "iconsetMetadata": {
+                "iconName": {
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/uCg_6hO_[G]_[ImAgE]_4ch.png": "Wildlife",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_yKk_fpV_YBo_[G].png": "Wildlife",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/Oi1_[ImAgE]_[G]_V24_hdh.png": "Wildlife",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/wb1_[ImAgE]_D8r_Z1f_[G].png": "Water",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/md_crU_sjw_[G]_[ImAgE].png": "Rocks",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/[ImAgE]_nEX_DRz_NMi_[G].png": "Plants",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/Fhd_bpY_[G]_[ImAgE]_LG.png": "Humans",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/qNR_rJh_[G]_[ImAgE]_58.png": "Bragging",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_BmR_nvp_[G]_XFE.png": "Wildlife",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_OTs_7F8_4FY_[ImAgE].png": "Water",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/u4D_6Si_[G]_[ImAgE]_FWZ.png": "Rocks",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_S88_tJt_MA3.png": "Plants",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/wjI_jjl_[ImAgE]_xss_[G].png": "Humans",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/sVx_[G]_[ImAgE]_e0t_AHk.png": "Bragging",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/DYV_[G]_9im_[ImAgE]_lEI.png": "Snow and Ice",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/nOS_[ImAgE]_p5M_[G]_BMZ.png": "Vista"
+                },
+                "iconMetadata": {
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/uCg_6hO_[G]_[ImAgE]_4ch.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_yKk_fpV_YBo_[G].png": "",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/Oi1_[ImAgE]_[G]_V24_hdh.png": "",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/wb1_[ImAgE]_D8r_Z1f_[G].png": "",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/md_crU_sjw_[G]_[ImAgE].png": "",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/[ImAgE]_nEX_DRz_NMi_[G].png": "",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/Fhd_bpY_[G]_[ImAgE]_LG.png": "",
+                    "components\/com_geolive\/users_files\/user_files_23\/Uploads\/qNR_rJh_[G]_[ImAgE]_58.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_BmR_nvp_[G]_XFE.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_OTs_7F8_4FY_[ImAgE].png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/u4D_6Si_[G]_[ImAgE]_FWZ.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_S88_tJt_MA3.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/wjI_jjl_[ImAgE]_xss_[G].png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/sVx_[G]_[ImAgE]_e0t_AHk.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/DYV_[G]_9im_[ImAgE]_lEI.png": "",
+                    "components\/com_geolive\/users_files\/user_files_20\/Uploads\/nOS_[ImAgE]_p5M_[G]_BMZ.png": ""
+                }
+            },
+            "widgetTitle": "Mobile App Markers",
+            "target": "mobile-app-markers",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.8": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "Popup Content.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            "Popup Content.metadata.positions.content.modules.0.json"
+                        ]
+                    },
+                    "footer": {
+                        "modules": [
+                            "Popup Content.metadata.positions.footer.modules.0.json"
+                        ]
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "templateName": "default",
+            "onRenderApplictionScript": "",
+            "requireTarget": true,
+            "widgetTitle": "Popup Content",
+            "target": "map.1",
+            "readAccess": "public"
+        }
+    },
+    "widget.9": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "customCSS": "app-style-css.customCSS.css",
+            "widgetTitle": "app-style-css",
+            "target": "app-style-css",
+            "readAccess": "public"
+        }
+    },
+    "widget.11": {
+        "name": "Tile Buttons",
+        "instance": "TileButtons",
+        "parameters": {
+            "sections": [
+                "fullscreen",
+                "home",
+                "login",
+                "logout"
+            ],
+            "controlColor": "rgb(48,84,107)",
+            "subControlColor": "rgb(100, 149, 237)",
+            "discussionTag": false,
+            "iconSetReferenceName": "",
+            "markerSearch": true,
+            "showLogoutProfile": false,
+            "tileIcon": [],
+            "groupIcon": [],
+            "position": "RIGHT_CENTER",
+            "offsetX": 100,
+            "offsetY": 100,
+            "tilePadding": 0,
+            "direction": "auto",
+            "markerSize": 32,
+            "tileSize": 50,
+            "showToolTips": false,
+            "fullscreenTip": false,
+            "homeTip": false,
+            "markerTip": false,
+            "loginTip": false,
+            "logoutTip": false,
+            "profileTip": false,
+            "displayMapSave": "1",
+            "guestLoginDrag": true,
+            "onDragEndScript": "defaultBehaviorFn();",
+            "useTipIconsetLayerTitle": false,
+            "formatTipScript": "",
+            "onDisplayTileScript": "",
+            "onProfileClickScript": "",
+            "markerIconset": [],
+            "layerMap": [],
+            "tipMap": [],
+            "filterLayerMappedIcons": true,
+            "iconsetMetadata": [],
+            "widgetTitle": "",
+            "target": "map.1",
+            "readAccess": "public"
+        }
+    },
+    "widget.12": {
+        "name": "Login Wizard Builder",
+        "instance": "LoginWizardBuilder",
+        "parameters": {
+            "reloadOnSuccess": true,
+            "reloadUrl": "",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -18,
+                    "y": 171
+                },
+                "children": [
+                    "widget.LoginWizardBuilder.12.metadata.children.0.json",
+                    {
+                        "title": "New Empty Step",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.LoginWizardBuilder.12.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 130,
+                            "y": 64
+                        },
+                        "children": [
+                            "widget.LoginWizardBuilder.12.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 90,
+                                    "y": 230
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "widget.LoginWizardBuilder.12.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.LoginWizardBuilder.12.metadata.children.1.builderMetadata.positions.content.modules.0.json"
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "widget.LoginWizardBuilder.12.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "requireTarget": true,
+            "templateName": "LoginWizard",
+            "widgetTitle": "",
+            "target": "map.1",
+            "readAccess": "public"
+        }
+    },
+    "widget.13": {
+        "name": "Content",
+        "instance": "CustomContent",
+        "parameters": {
+            "customScript": "app-style.customScript.js",
+            "widgetTitle": "app-style",
+            "target": "app-style",
+            "readAccess": "public"
+        }
+    },
+    "widget.22": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {}
+    },
+    "widget.23": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {}
+    },
+    "widget.16": {
+        "name": "Configuration",
+        "instance": "Configuration",
+        "parameters": {
+            "contentTemplate": "",
+            "comments": "",
+            "formatParametersScript": "cluster-config.formatParametersScript.js",
+            "parameters": {
+                "hello": {
+                    "type": "text",
+                    "name": "hello",
+                    "placeholder": "example config field",
+                    "default": "World",
+                    "label": "Hello"
+                }
+            },
+            "cluster-": "rgb(0,0,0)",
+            "cluster-wildlife": "rgb(126, 25, 25)",
+            "cluster-rocks": "rgb(148, 84, 5)",
+            "cluster-humans": "rgb(200, 70, 2)",
+            "cluster-water": "rgb(1, 105, 134)",
+            "cluster-plants": "rgb(44, 100, 34)",
+            "cluster-bragging": "rgb(22, 26, 149)",
+            "cluster-none": "rgb(133, 129, 129)",
+            "cluster-vista": "rgb(251, 211, 10)",
+            "widgetTitle": "cluster-config",
+            "target": "cluster-config",
+            "readAccess": "public"
+        }
+    },
+    "widget.20": {
+        "name": "Uncluster Button",
+        "instance": "LayerClusterToggleTile",
+        "parameters": {
+            "controlColor": "rgb(48,84,107)",
+            "tileIcon": [],
+            "unclusterTip": "Toggle Placemark Clustering",
+            "clusterTip": "",
+            "widgetTitle": "",
+            "target": "map.1",
+            "readAccess": "public",
+            "position": "RIGHT_CENTER"
+        }
+    },
+    "widget.21": {
+        "name": "Map Box",
+        "instance": "MapBox",
+        "parameters": {
+            "widgetTitle": "mapbox",
+            "target": "mapbox",
+            "readAccess": "public"
+        }
+    }
+}
