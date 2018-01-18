@@ -970,16 +970,16 @@
                             "widget.LoginWizardBuilder.12.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 140,
-                            "y": 74
+                            "x": 150,
+                            "y": 84
                         },
                         "children": [
                             "widget.LoginWizardBuilder.12.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 100,
-                                    "y": 240
+                                    "x": 110,
+                                    "y": 250
                                 }
                             }
                         ],
