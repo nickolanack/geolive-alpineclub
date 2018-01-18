@@ -1101,5 +1101,10 @@
             "target": "mapbox",
             "readAccess": "public"
         }
+    },
+    "widget.24": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {}
     }
 }
