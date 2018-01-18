@@ -970,25 +970,23 @@
                             "widget.LoginWizardBuilder.12.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 130,
-                            "y": 64
+                            "x": 140,
+                            "y": 74
                         },
                         "children": [
                             "widget.LoginWizardBuilder.12.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 90,
-                                    "y": 230
+                                    "x": 100,
+                                    "y": 240
                                 }
                             }
                         ],
                         "builderMetadata": {
                             "positions": {
                                 "title": {
-                                    "modules": [
-                                        "widget.LoginWizardBuilder.12.metadata.children.1.builderMetadata.positions.title.modules.0.json"
-                                    ]
+                                    "modules": []
                                 },
                                 "content": {
                                     "modules": [
@@ -996,9 +994,7 @@
                                     ]
                                 },
                                 "footer": {
-                                    "modules": [
-                                        "widget.LoginWizardBuilder.12.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
-                                    ]
+                                    "modules": []
                                 },
                                 "menu": {
                                     "modules": []

@@ -7,6 +7,8 @@
         "labelForSubmit": "Login",
         "labelForUsername": "Username",
         "labelForPassword": "Password",
-        "onLoginFailedScript": ""
+        "onLoginFailedScript": "",
+        "reloadOnSuccess": true,
+        "reloadUrl": ""
     }
 }
