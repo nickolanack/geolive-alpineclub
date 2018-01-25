@@ -1,2 +1,2 @@
-$parameters->client=GetClient()->getUserMetadata();
+$parameters['client']=GetClient()->getUserMetadata();
 return $parameters;
