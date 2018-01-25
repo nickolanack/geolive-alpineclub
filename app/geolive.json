@@ -1226,5 +1226,13 @@
             "customScript": "authorizeEmailAddressForDevice.customScript.js",
             "readAccess": "public"
         }
+    },
+    "widget.28": {
+        "name": "Article",
+        "instance": "Article",
+        "parameters": {
+            "articleTitle": "That link is expired or invalid",
+            "articleHtml": ""
+        }
     }
 }
