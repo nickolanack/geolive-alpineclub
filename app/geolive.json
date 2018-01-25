@@ -1174,7 +1174,7 @@
         "name": "Ajax Method",
         "instance": "AjaxMethod",
         "parameters": {
-            "customScript": "return true;",
+            "customScript": "authorizeEmail.customScript.js",
             "widgetTitle": "authorizeEmail",
             "target": "authorizeEmail",
             "readAccess": "public"
