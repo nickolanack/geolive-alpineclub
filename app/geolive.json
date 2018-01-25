@@ -1169,5 +1169,10 @@
             "target": "mainView",
             "readAccess": "public"
         }
+    },
+    "widget.25": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {}
     }
 }
