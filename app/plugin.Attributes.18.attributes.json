@@ -49,5 +49,56 @@
                 }
             ]
         }
+    },
+    {
+        "id": "2",
+        "name": "deviceUserAttributes",
+        "description": "",
+        "label": "",
+        "suffix": "_4028",
+        "metadata": {
+            "title": "deviceUserAttributes",
+            "readAccess": "public",
+            "appliesTo": [
+                "user"
+            ],
+            "id": "2",
+            "suffix": "_4028",
+            "description": "",
+            "fields": [
+                {
+                    "visibility": "public",
+                    "tableId": "2",
+                    "tableName": "deviceUserAttributes",
+                    "tableSuffix": "_4028",
+                    "title": "someData0",
+                    "label": "Some Data 0",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ]
+        }
     }
 ]
