@@ -1221,8 +1221,8 @@
         "name": "Function",
         "instance": "UserFunction",
         "parameters": {
-            "widgetTitle": "authorizeEmailAddressForDevicein",
-            "target": "authorizeEmailAddressForDevicein",
+            "widgetTitle": "authorizeEmailAddressForDevice",
+            "target": "authorizeEmailAddressForDevice",
             "customScript": "",
             "readAccess": "public"
         }
