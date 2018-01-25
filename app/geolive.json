@@ -825,7 +825,9 @@
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_TW_[ImAgE]_kMg_jYe.png"
             ],
             "account-authorized": true,
-            "share": [],
+            "share": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/8q1_[G]_FbD_[ImAgE]_39l.png"
+            ],
             "auth": []
         }
     },
