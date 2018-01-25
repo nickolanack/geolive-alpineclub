@@ -12,7 +12,10 @@ if(empty($email)){
 GetPlugin('Attributes');
 (new attributes\Record('deviceUserAttributes'))->setValues($clientId, 'user', array('authEmail'=>$email, 'authEmailStatus'=>'sent'));
 
-$token=($links=GetPlugin('Links'))->createLinkEventCode('authorizeEmailAddressForDevice', $json);
+$token=($links=GetPlugin('Links'))->createLinkEventCode('authorizeEmailAddressForDevice', array(
+    'user'=>$clientId,
+    'email'=>$json->email
+));
 $link=HtmlDocument()->website().'/'.$links->actionUrlForToken($token);
 
 GetPlugin('Email')->getMailer()
