@@ -2,7 +2,7 @@ $token=($links=GetPlugin('Links'))->createLinkEventCode('authorizeEmailAddressFo
 $link=$links->actionUrlForToken($token);
 
 GetPlugin('Email')->getMailer()
-    ->mail("Executing email authorization for", "Activate your email address with this link: ".$link
+    ->mail("Executing email authorization for", "Activate your email address with this link: ".$link)
     ->to("nickblackwell82@gmail.com")
     ->send();
 
