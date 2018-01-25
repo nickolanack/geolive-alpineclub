@@ -1,3 +1,17 @@
+$clientId=GetClient()->getUserId();
+if($clientId<=0){
+    return false;
+}
+
+$email=$json->email;
+
+if(empty($email)){
+    return false;
+}
+
+GetPlugin('Attributes')
+(new attributes\Record('deviceUsersAttributes'))->setValues(array('authEmail'=>$email, 'authEmailStatus'=>'sent'));
+
 $token=($links=GetPlugin('Links'))->createLinkEventCode('authorizeEmailAddressForDevice', $json);
 $link=HtmlDocument()->website().'/'.$links->actionUrlForToken($token);
 
