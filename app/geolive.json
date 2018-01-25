@@ -1208,5 +1208,13 @@
             "target": "authorizeEmail",
             "readAccess": "public"
         }
+    },
+    "widget.26": {
+        "name": "Article",
+        "instance": "Article",
+        "parameters": {
+            "articleTitle": "You did it! Thanks.",
+            "articleHtml": ""
+        }
     }
 }
