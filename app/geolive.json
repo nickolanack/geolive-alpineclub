@@ -680,6 +680,12 @@
                     "name": "vista-color-active",
                     "default": "rgb(0,0,0)",
                     "label": "vista-color-active"
+                },
+                "account-authorized": {
+                    "type": "boolean",
+                    "name": "account-authorized",
+                    "default": false,
+                    "label": "account-authorized"
                 }
             },
             "appLogo": [
@@ -799,7 +805,8 @@
             "formatOutputScript": "return $parameters;",
             "profile": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_TW_[ImAgE]_kMg_jYe.png"
-            ]
+            ],
+            "account-authorized": false
         }
     },
     "widget.7": {
