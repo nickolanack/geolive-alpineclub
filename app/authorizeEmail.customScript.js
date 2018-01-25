@@ -10,7 +10,7 @@ if(empty($email)){
 }
 
 GetPlugin('Attributes');
-(new attributes\Record('deviceUsersAttributes'))->setValues(array('authEmail'=>$email, 'authEmailStatus'=>'sent'));
+(new attributes\Record('deviceUsersAttributes'))->setValues($clientId, 'user', array('authEmail'=>$email, 'authEmailStatus'=>'sent'));
 
 $token=($links=GetPlugin('Links'))->createLinkEventCode('authorizeEmailAddressForDevice', $json);
 $link=HtmlDocument()->website().'/'.$links->actionUrlForToken($token);
