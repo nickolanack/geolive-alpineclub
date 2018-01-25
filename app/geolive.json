@@ -367,6 +367,24 @@
                     "maxWidth": 92,
                     "limit": 1
                 },
+                "share": {
+                    "type": "images",
+                    "name": "share",
+                    "default": [],
+                    "label": "share",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "auth": {
+                    "type": "images",
+                    "name": "auth",
+                    "default": [],
+                    "label": "auth",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
                 "downloads-label": {
                     "type": "text",
                     "name": "downloads-label",
@@ -806,7 +824,9 @@
             "profile": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_TW_[ImAgE]_kMg_jYe.png"
             ],
-            "account-authorized": true
+            "account-authorized": true,
+            "share": [],
+            "auth": []
         }
     },
     "widget.7": {
