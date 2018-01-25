@@ -1173,6 +1173,11 @@
     "widget.25": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
-        "parameters": {}
+        "parameters": {
+            "customScript": "return true;",
+            "widgetTitle": "authorizeEmail",
+            "target": "authorizeEmail",
+            "readAccess": "public"
+        }
     }
 }
