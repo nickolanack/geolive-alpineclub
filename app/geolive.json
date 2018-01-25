@@ -1223,7 +1223,7 @@
         "parameters": {
             "widgetTitle": "authorizeEmailAddressForDevice",
             "target": "authorizeEmailAddressForDevice",
-            "customScript": "",
+            "customScript": "authorizeEmailAddressForDevice.customScript.js",
             "readAccess": "public"
         }
     }
