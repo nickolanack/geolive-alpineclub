@@ -820,7 +820,7 @@
             ],
             "vista-color": "rgb(251, 211, 10)",
             "vista-color-active": "rgb(251, 211, 10)",
-            "formatOutputScript": "return $parameters;",
+            "formatOutputScript": "Mobile App Configuration.formatOutputScript.js",
             "profile": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_TW_[ImAgE]_kMg_jYe.png"
             ],
