@@ -1,3 +1,4 @@
+<?php
 GetPlugin('Attributes');
 
 Emit('authorizeEmailStart',$eventArgs);
@@ -9,3 +10,5 @@ Emit('authorizeEmailStart',$eventArgs);
     
     
 Emit('authorizeEmailEnd',$eventArgs);
+
+?>
