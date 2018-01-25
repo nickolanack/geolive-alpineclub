@@ -358,6 +358,15 @@
                     "maxWidth": 92,
                     "limit": 1
                 },
+                "profile": {
+                    "type": "images",
+                    "name": "profile",
+                    "default": [],
+                    "label": "profile",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
                 "downloads-label": {
                     "type": "text",
                     "name": "downloads-label",
@@ -786,7 +795,9 @@
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/Wef_dmW_gS9_[ImAgE]_[G].png"
             ],
             "vista-color": "rgb(251, 211, 10)",
-            "vista-color-active": "rgb(251, 211, 10)"
+            "vista-color-active": "rgb(251, 211, 10)",
+            "formatOutputScript": "return $parameters;",
+            "profile": []
         }
     },
     "widget.7": {
@@ -1090,7 +1101,7 @@
         }
     },
     "widget.21": {
-        "name": "Map Box",
+        "name": "MapBox Map",
         "instance": "MapBox",
         "parameters": {
             "widgetTitle": "mapbox",
@@ -1098,6 +1109,7 @@
             "templateName": "mapbox",
             "styleUrl": "mapbox:\/\/styles\/joncorbett\/cjcb0uuqv0vqd2rnw1onaoabw",
             "accessToken": "XXXX-XXXX",
+            "mapOptions": [],
             "readAccess": "public"
         }
     },
@@ -1118,7 +1130,7 @@
                                 "config": {
                                     "className": "",
                                     "viewType": "view",
-                                    "namedView": "defaultView",
+                                    "namedView": "featuredItems",
                                     "showInlineEdit": false,
                                     "namedFormView": "defaultFormView",
                                     "showDeleteButton": false,
