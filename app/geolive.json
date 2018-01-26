@@ -1092,7 +1092,12 @@
     "widget.29": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
-        "parameters": {}
+        "parameters": {
+            "customScript": "return true;",
+            "widgetTitle": "saveProfile",
+            "target": "saveProfile",
+            "readAccess": "public"
+        }
     },
     "widget.16": {
         "name": "Configuration",
