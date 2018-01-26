@@ -1079,11 +1079,6 @@
             "readAccess": "public"
         }
     },
-    "widget.22": {
-        "name": "Detail View",
-        "instance": "DetailView",
-        "parameters": {}
-    },
     "widget.23": {
         "name": "Detail View",
         "instance": "DetailView",
