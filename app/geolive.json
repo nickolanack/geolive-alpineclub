@@ -1079,9 +1079,14 @@
             "readAccess": "public"
         }
     },
-    "widget.23": {
-        "name": "Detail View",
-        "instance": "DetailView",
+    "widget.30": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {}
+    },
+    "widget.29": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
         "parameters": {}
     },
     "widget.16": {
