@@ -4,7 +4,7 @@ if($client['id']>0){
     $parameters['client']['attributes']=(new attributes\Record('deviceUserAttributes'))->getValues($client['id'],'user');
     
     if($parameters['client']['attributes']['authEmail']===$parameters['client']['attributes']['authorizedEmail']){
-        parameters['authorized']=true;
+        $parameters['authorized']=true;
     }
     
     
