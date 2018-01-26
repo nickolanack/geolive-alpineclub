@@ -14,3 +14,6 @@ GetPlugin('Attributes');
     ->setValues($clientId, 'user', array(
         'profileImage'=>$profileImageHtml
     ));
+    
+    
+return true;
