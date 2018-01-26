@@ -277,6 +277,15 @@
                     "default": "5",
                     "label": "Splash Screen Duration"
                 },
+                "profile-image": {
+                    "type": "images",
+                    "name": "profile-image",
+                    "default": [],
+                    "label": "Default profile-image",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
                 "create-marker": {
                     "type": "images",
                     "name": "create-marker",
@@ -830,7 +839,8 @@
             ],
             "auth": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_WDR_CMl_[G]_Ord.png"
-            ]
+            ],
+            "profile-image": []
         }
     },
     "widget.7": {
