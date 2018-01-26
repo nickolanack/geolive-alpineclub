@@ -9,5 +9,13 @@ if($client['id']>0){
     }
     
     
+    if(!empty($parameters['client']['attributes']['profileImage'])){
+        $parameters['account-profile-image']=HtmlDocument()->parseImageUrls(
+            $parameters['client']['attributes']['profileImage']
+        );    
+        
+    }
+    
+    
 }
 return $parameters;
