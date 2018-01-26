@@ -1082,7 +1082,12 @@
     "widget.30": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
-        "parameters": {}
+        "parameters": {
+            "customScript": "return true;",
+            "widgetTitle": "deauthorizeEmail",
+            "target": "deauthorizeEmail",
+            "readAccess": "public"
+        }
     },
     "widget.29": {
         "name": "Ajax Method",
