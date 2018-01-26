@@ -1,6 +1,6 @@
 $parameters['client']=($client=GetClient()->getUserMetadata());
 $parameters['account-authorized']=false;
-$parameters['account-profile-image']=$parameters['account-profile'];
+$parameters['account-profile-image']=$parameters['profile-image'];
 if($client['id']>0){
     GetPlugin('Attributes');
     $parameters['client']['attributes']=(new attributes\Record('deviceUserAttributes'))->getValues($client['id'],'user');
@@ -15,6 +15,7 @@ if($client['id']>0){
             $parameters['client']['attributes']['profileImage']
         );    
         
+
     }
     
     
