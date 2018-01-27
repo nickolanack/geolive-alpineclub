@@ -1258,5 +1258,13 @@
             "articleTitle": "That link is expired or invalid",
             "articleHtml": ""
         }
+    },
+    "widget.31": {
+        "name": "Article",
+        "instance": "Article",
+        "parameters": {
+            "articleTitle": "You did it! Thanks.",
+            "articleHtml": ""
+        }
     }
 }
