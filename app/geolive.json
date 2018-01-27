@@ -540,27 +540,6 @@
                     "maxWidth": 64,
                     "limit": 1
                 },
-                "wildlife": {
-                    "type": "images",
-                    "name": "wildlife",
-                    "default": [],
-                    "label": "Wildlife",
-                    "maxHeight": 64,
-                    "maxWidth": 64,
-                    "limit": 1
-                },
-                "wildlife-color": {
-                    "type": "color",
-                    "name": "wildlife-color",
-                    "default": "rgb(0,0,0)",
-                    "label": "wildlife-color"
-                },
-                "wildlife-color-active": {
-                    "type": "color",
-                    "name": "wildlife-color-active",
-                    "default": "rgb(0,0,0)",
-                    "label": "wildlife-color-active"
-                },
                 "water": {
                     "type": "images",
                     "name": "water",
@@ -713,6 +692,27 @@
                     "name": "account-authorized",
                     "default": false,
                     "label": "account-authorized"
+                },
+                "wildlife": {
+                    "type": "images",
+                    "name": "wildlife",
+                    "default": [],
+                    "label": "Wildlife",
+                    "maxHeight": 64,
+                    "maxWidth": 64,
+                    "limit": 1
+                },
+                "wildlife-color": {
+                    "type": "color",
+                    "name": "wildlife-color",
+                    "default": "rgb(0,0,0)",
+                    "label": "wildlife-color"
+                },
+                "wildlife-color-active": {
+                    "type": "color",
+                    "name": "wildlife-color-active",
+                    "default": "rgb(0,0,0)",
+                    "label": "wildlife-color-active"
                 }
             },
             "appLogo": [
