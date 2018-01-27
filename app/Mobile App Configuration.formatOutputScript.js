@@ -11,7 +11,7 @@ if($client['id']>0){
     
     
     if(!empty($parameters['client']['attributes']['profileImage'])){
-        $parameters['account-profile-image']=$parameters['client']['attributes']['profileImage'];
+        $parameters['account-profile-image']=array($parameters['client']['attributes']['profileImage']);
     }
     
     
