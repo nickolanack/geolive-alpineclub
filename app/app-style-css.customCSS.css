@@ -40,3 +40,8 @@ foreach($params as $opts){
 .page.form .label{
 	color:#555555;
 }
+
+
+.page.form .submit{
+    background-color:#116553;
+}
