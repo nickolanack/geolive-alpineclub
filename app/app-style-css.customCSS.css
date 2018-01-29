@@ -42,6 +42,6 @@ foreach($params as $opts){
 }
 
 
-.page.form .submit{
+.page.form .submit, .page.form .subform, .page.form .add-photo{
     background-color:#116553;
 }
