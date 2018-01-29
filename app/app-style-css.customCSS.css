@@ -53,9 +53,9 @@ foreach($params as $opts){
 	margin:20px 10px;
 }
 
-.page.form.ios .bottom-right Button{
+.page.form.ios #bottom-right Button{
 	margin-left:0;
 }
-.page.form.ios .bottom-left Button{
+.page.form.ios #bottom-left Button{
 	margin-right:0;
 }
