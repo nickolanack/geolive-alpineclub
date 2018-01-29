@@ -31,4 +31,12 @@ foreach($params as $opts){
 }
 
 
+
+
+
 ?>
+
+
+.page.form .label{
+	color:cornflowerblue;
+}
