@@ -25,7 +25,7 @@ GetPlugin('Apps')
     ->notifyUsersDevices(
         $eventArgs->user, 
         array(
-            "data"=>=>array("authorized"=>true),
+            "data"=>array("authorized"=>true),
             "parameters"=>array("account-authorized"=>true),
             "text"=>"Your account has been authorized"
         )
