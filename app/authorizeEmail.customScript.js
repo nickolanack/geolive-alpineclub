@@ -23,22 +23,33 @@ GetPlugin('Attributes');
 (new attributes\Record('deviceUserAttributes'))->setValues($clientId, 'user', array('authEmail'=>$email, 'authEmailStatus'=>'sent'));
 
 //create event token
-$token=($links=GetPlugin('Links'))->createLinkEventCode('onAuthorizeEmailAddressForDevice', array(
+$adminToken=($links=GetPlugin('Links'))->createLinkEventCode('onAuthorizeEmailAddressForDevice', array(
     'user'=>$clientId,
-    'email'=>$json->email
+    'email'=>$json->email,
+    "text"=>"And administrator has activated your device"
 ));
 //make a one time clickable url from event token
-$link=HtmlDocument()->website().'/'.$links->actionUrlForToken($token);
+$adminLink=HtmlDocument()->website().'/'.$links->actionUrlForToken($adminToken);
+
+
+//create event token
+$clientToken=($links=GetPlugin('Links'))->createLinkEventCode('onAuthorizeEmailAddressForDevice', array(
+    'user'=>$clientId,
+    'email'=>$json->email,
+    "text"=>"And administrator has activated your device"
+));
+//make a one time clickable url from event token
+$clientLink=HtmlDocument()->website().'/'.$links->actionUrlForToken($clientToken);
 
 //email link to email address. verify email ownership
 GetPlugin('Email')->getMailer()
-    ->mail("Activate Device for: ".GetClient()->getRealName(), "Activate App Clients Device with email: ".$email.": <a href=\"".$link."\" >Click Here</a>")
+    ->mail("Activate Device for: ".GetClient()->getRealName(), "Activate App Clients Device with email: ".$email.": <a href=\"".$adminLink."\" >Click Here</a>")
     ->to("nickblackwell82@gmail.com")
     ->send();
     
 if($validEmail){  
 GetPlugin('Email')->getMailer()
-    ->mail("Activate your mobile device (".GetClient()->getRealName().") with The Alpine Club", "You can activate your device by clicking this link: <a href=\"".$link."\" >Click Here</a>")
+    ->mail("Activate your mobile device (".GetClient()->getRealName().") with The Alpine Club", "You can activate your device by clicking this link: <a href=\"".$clientLink."\" >Click Here</a>")
     ->to($email)
     ->send();
 }
