@@ -36,7 +36,7 @@ $adminLink=HtmlDocument()->website().'/'.$links->actionUrlForToken($adminToken);
 $clientToken=($links=GetPlugin('Links'))->createLinkEventCode('onAuthorizeEmailAddressForDevice', array(
     'user'=>$clientId,
     'email'=>$json->email,
-    "text"=>"And administrator has activated your device"
+    "text"=>"Your device has been activated"
 ));
 //make a one time clickable url from event token
 $clientLink=HtmlDocument()->website().'/'.$links->actionUrlForToken($clientToken);
