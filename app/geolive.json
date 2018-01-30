@@ -1259,6 +1259,11 @@
             "articleHtml": ""
         }
     },
+    "widget.32": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {}
+    },
     "widget.31": {
         "name": "Article",
         "instance": "Article",
