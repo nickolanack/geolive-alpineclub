@@ -1262,7 +1262,12 @@
     "widget.32": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
-        "parameters": {}
+        "parameters": {
+            "customScript": "listMarkers.customScript.js",
+            "widgetTitle": "listMarkers",
+            "target": "listMarkers",
+            "readAccess": "public"
+        }
     },
     "widget.31": {
         "name": "Article",
