@@ -59,3 +59,7 @@ foreach($params as $opts){
 .page.form.ios #bottom-left Button{
 	margin-right:0;
 }
+
+.page.form .media-selection .buttonset .icon.image-icon{
+	background-color: #116553;
+}
