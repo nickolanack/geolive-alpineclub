@@ -32,5 +32,5 @@ GetPlugin('Email')->getMailer()
 
 //prompt user to check their email address.
 return array(
-    "message"=>"An email, containing an activation link, has been sent to ".$email."."
+    "text"=>"An email, containing an activation link, has been sent to ".$email."."
     );
