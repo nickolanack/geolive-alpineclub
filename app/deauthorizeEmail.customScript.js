@@ -16,7 +16,7 @@ GetPlugin('Attributes');
 
 
 return array(
-            "data"=>=>array("authorized"=>false),
+            "data"=>array("authorized"=>false),
             "parameters"=>array("account-authorized"=>false),
             "text"=>"Your account has been deauthorized"
         );
