@@ -18,10 +18,17 @@ GetPlugin('Attributes');
 
 //user should now have matching attributes: authorizedEmail=authEmail
 
+
+
+
 GetPlugin('Apps')
     ->notifyUsersDevices(
         $eventArgs->user, 
-        'Successfully authorized your account with the Alpine Club'
+        array(
+            "data"=>=>array("authorized"=>false),
+            "parameters"=>array("account-authorized"=>false),
+            "text"=>"Your account has been authorized"
+        )
     );
 
 
