@@ -1,1 +1,1 @@
-return array("results"=>array());
+return array("items"=>array());
