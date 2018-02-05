@@ -9,8 +9,8 @@ return array(
         ->appendUserAttributes('deviceUserAttributes')
         ->map(function($item)use($defaultProfileIcon){
             
-            $profileIcon=$item['user-attributes']['deviceUserAttributes']['profile'];
-            $item['user-attributes']['deviceUserAttributes']['profile']=$defaultProfileIcon;
+            //$profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
+            $item['user-attributes']['deviceUserAttributes']['profileImage']=$defaultProfileIcon;
             
             return $item;
             
