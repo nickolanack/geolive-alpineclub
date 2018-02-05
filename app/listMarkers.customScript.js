@@ -9,8 +9,15 @@ return array(
         ->appendUserAttributes('deviceUserAttributes')
         ->map(function($item)use($defaultProfileIcon){
             
-            //$profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
+            $profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
+            if(empty($profileIcon)||(!HtmlDocument()->isLocalFileUrl($profileIcon))){
+                $item['user-attributes']['deviceUserAttributes']['profileImage']=$defaultProfileIcon;
+            }
+            
+            
             $item['user-attributes']['deviceUserAttributes']['defaultProfileImage']=$defaultProfileIcon;
+            
+            
             
             return $item;
             
