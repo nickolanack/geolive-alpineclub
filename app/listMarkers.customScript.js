@@ -8,6 +8,9 @@ return array(
         ->appendUserAttributes('deviceUserAttributes')
         ->map(function($item){
             
+            $profileIcon=$item['user-attributes']['deviceUserAttributes']['profile'];
+            $item['user-attributes']['deviceUserAttributes']['profile']=GetWidget("")->getParameter("")
+            
             return $item;
             
         })
