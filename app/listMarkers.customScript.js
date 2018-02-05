@@ -10,12 +10,14 @@ return array(
         ->map(function($item)use($defaultProfileIcon){
             
             $profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
+            $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=false;
             if(empty($profileIcon)||(!HtmlDocument()->isLocalFileUrl($profileIcon))){
                 $item['user-attributes']['deviceUserAttributes']['profileImage']=$defaultProfileIcon;
+                $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=true;
             }
             
             
-            $item['user-attributes']['deviceUserAttributes']['defaultProfileImage']=$defaultProfileIcon;
+            
             
             
             
