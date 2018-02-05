@@ -2,7 +2,7 @@ GetPlugin('Maps');
 
 
 $layer=(int)$json->layer;
-$defaultProfileIcon=GetWidget("mobile-app-config")->getParameter("profile-image");
+$defaultProfileIcon=GetWidget("mobile-app-config")->getParameter("profile-image")[0];
 
 return array(
     "items"=>(new spatial\Features())->listLayerItems($layer)
