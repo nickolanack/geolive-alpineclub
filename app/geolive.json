@@ -1280,6 +1280,11 @@
     "widget.33": {
         "name": "Content",
         "instance": "CustomContent",
-        "parameters": {}
+        "parameters": {
+            "customScript": "widget.CustomContent.33.customScript.js",
+            "widgetTitle": "",
+            "target": "",
+            "readAccess": "public"
+        }
     }
 }
