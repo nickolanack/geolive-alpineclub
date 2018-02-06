@@ -1276,5 +1276,10 @@
             "articleTitle": "You did it! Thanks.",
             "articleHtml": ""
         }
+    },
+    "widget.33": {
+        "name": "Content",
+        "instance": "CustomContent",
+        "parameters": {}
     }
 }
