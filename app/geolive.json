@@ -1281,9 +1281,9 @@
         "name": "Content",
         "instance": "CustomContent",
         "parameters": {
-            "customScript": "widget.CustomContent.33.customScript.js",
-            "widgetTitle": "",
-            "target": "",
+            "customScript": "download.customScript.js",
+            "widgetTitle": "download",
+            "target": "download",
             "readAccess": "public"
         }
     }
