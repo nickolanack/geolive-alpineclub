@@ -16,5 +16,10 @@ if($client['id']>0){
     }
     
     
+    if(!empty($attributes['profileName'])){
+        $parameters['account-name']=array($attributes['profileName']);
+    }
+    
+    
 }
 return $parameters;
