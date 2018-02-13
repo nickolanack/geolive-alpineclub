@@ -15,9 +15,9 @@ if($client['id']>0){
         $parameters['account-profile-image']=array($attributes['profileImage']);
     }
     
-    
+    $parameters['account-name']=GetClient()->getRealName();
     if(!empty($attributes['profileName'])){
-        $parameters['account-name']=array($attributes['profileName']);
+        $parameters['account-name']=$attributes['profileName'];
     }
     
     
