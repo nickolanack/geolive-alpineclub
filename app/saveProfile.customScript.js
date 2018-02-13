@@ -16,5 +16,10 @@ GetPlugin('Attributes');
         'profileName'=>$json->name
     ));
     
-    
-return true;
+   
+
+
+
+ return array(
+            "text"=>"Your profile has been updated"
+        )
