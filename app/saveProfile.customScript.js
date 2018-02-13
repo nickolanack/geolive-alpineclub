@@ -22,4 +22,4 @@ GetPlugin('Attributes');
 
  return array(
             "text"=>"Your profile has been updated"
-        )
+        );
