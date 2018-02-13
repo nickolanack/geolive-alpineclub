@@ -909,6 +909,11 @@
         "name": "Detail View",
         "instance": "DetailView",
         "parameters": {
+            "widgetTitle": "Popup Content",
+            "target": "map.1",
+            "templateName": "default",
+            "requireTarget": true,
+            "onRenderApplictionScript": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -938,11 +943,6 @@
                 ],
                 "_diagramState": []
             },
-            "templateName": "default",
-            "onRenderApplictionScript": "",
-            "requireTarget": true,
-            "widgetTitle": "Popup Content",
-            "target": "map.1",
             "readAccess": "public"
         }
     },
@@ -1172,6 +1172,11 @@
         "name": "Detail View",
         "instance": "DetailView",
         "parameters": {
+            "widgetTitle": "mainView",
+            "target": "mainView",
+            "templateName": "mainView",
+            "requireTarget": false,
+            "onRenderApplictionScript": "",
             "metadata": {
                 "positions": {
                     "title": {
@@ -1215,11 +1220,6 @@
                 ],
                 "_diagramState": []
             },
-            "templateName": "mainView",
-            "onRenderApplictionScript": "",
-            "requireTarget": false,
-            "widgetTitle": "mainView",
-            "target": "mainView",
             "readAccess": "public"
         }
     },

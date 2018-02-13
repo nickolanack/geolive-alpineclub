@@ -12,7 +12,8 @@ if(empty($profileImageHtml)){
 GetPlugin('Attributes');
 (new attributes\Record('deviceUserAttributes'))
     ->setValues($clientId, 'user', array(
-        'profileImage'=>$profileImageHtml
+        'profileImage'=>$profileImageHtml,
+        'profileName'=>$json->name
     ));
     
     
