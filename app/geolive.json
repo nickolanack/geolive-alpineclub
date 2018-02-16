@@ -1290,6 +1290,11 @@
     "widget.34": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
-        "parameters": {}
+        "parameters": {
+            "customScript": "deleteItem.customScript.js",
+            "widgetTitle": "deleteItem",
+            "target": "deleteItem",
+            "readAccess": "public"
+        }
     }
 }
