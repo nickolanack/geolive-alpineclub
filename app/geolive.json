@@ -1286,5 +1286,10 @@
             "target": "download",
             "readAccess": "public"
         }
+    },
+    "widget.34": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {}
     }
 }
