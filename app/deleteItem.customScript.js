@@ -1,1 +1,1 @@
-return (new mapItemAjaxController())->executeTask('mapitem_delete',(object)array('mapitemId'=>$json->item));
+return (new core\DefaultAjaxTreeController())->executeTask('mapitem_delete',(object)array('mapitemId'=>$json->item));
