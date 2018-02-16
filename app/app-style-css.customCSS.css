@@ -66,5 +66,5 @@ foreach($params as $opts){
 
 
 .form-tutorial Image{
-    max-width:300px;
+    width:300px;
 }
