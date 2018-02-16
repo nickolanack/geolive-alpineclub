@@ -891,12 +891,12 @@
             "profile-image": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_98d_ovP_mli_[G].png"
             ],
-            "tutorial-html1": "",
-            "tutorial-html2": "",
-            "tutorial-html3": "",
-            "tutorial-html4": "",
-            "tutorial-html5": "",
-            "tutorial-html6": ""
+            "tutorial-html1": "Overview\r\n\r\nThe Alpine Club of Canada (ACC) Mountain App and interactive website is intended to promote information and story sharing about mountain environments and self-propelled experiences between members of the club.\u00a0\r\n\r\nYou can use it to tell stories about your outdoor adventures and club trips, and to document mountain flora, fauna, glaciers, past human history, route information and any other interesting or notable things you see while travelling in the mountains.  \r\n\r\nOver time, the collective contributions of our members will provide a rich narrative documenting the club\u2019s activities and the changing state of mountain environments in Canada.\r\n\r\nTo get started:\r\n\r\nClick Add Story on the main screen to take a photo of where you are. Your photo will be used to locate your position in latitude and longitude and to capture the time and date of your story.",
+            "tutorial-html2": "On the next screen, add other information if you want \u2013 title, description, another photo, video, sound - to complete your story.  Click Next.",
+            "tutorial-html3": "Select a category for tagging your story... then click Save and your story will be uploaded and shared on the interactive map.",
+            "tutorial-html4": "Viewing stories on the map\r\n\r\nFrom the main screen, click Map to see stories that have been submitted by you and other users.  You may also view the Map through a web browser at: alpine.geolive.ca.",
+            "tutorial-html5": "Viewing and deleting your stories\r\n\r\nFrom the main screen, click My Stories to view or delete the stories you have submitted.",
+            "tutorial-html6": "Configuring your profile\r\n\r\nFrom the main screen, click Profile to add a photo and your name to your profile. These will be visible to other users when you post stories."
         }
     },
     "widget.7": {
