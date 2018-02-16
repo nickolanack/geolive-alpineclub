@@ -67,4 +67,5 @@ foreach($params as $opts){
 
 .form-tutorial Image{
     width:500px;
+    border: 1px solid #116553;
 }
