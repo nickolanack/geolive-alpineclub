@@ -513,6 +513,54 @@
                     "code-header": "<p>",
                     "code-footer": "<\/p>"
                 },
+                "tutorial-html1": {
+                    "type": "input.script",
+                    "name": "tutorial-html1",
+                    "default": "",
+                    "label": "tutorial-html1",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
+                "tutorial-html2": {
+                    "type": "input.script",
+                    "name": "tutorial-html2",
+                    "default": "",
+                    "label": "tutorial-html2",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
+                "tutorial-html3": {
+                    "type": "input.script",
+                    "name": "tutorial-html3",
+                    "default": "",
+                    "label": "tutorial-html3",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
+                "tutorial-html4": {
+                    "type": "input.script",
+                    "name": "tutorial-html4",
+                    "default": "",
+                    "label": "tutorial-html4",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
+                "tutorial-html5": {
+                    "type": "input.script",
+                    "name": "tutorial-html5",
+                    "default": "",
+                    "label": "tutorial-html5",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
+                "tutorial-html6": {
+                    "type": "input.script",
+                    "name": "tutorial-html6",
+                    "default": "",
+                    "label": "tutorial-html6",
+                    "code-header": "<p>",
+                    "code-footer": "<\/p>"
+                },
                 "audio-icon": {
                     "type": "images",
                     "name": "audio-icon",
@@ -842,7 +890,13 @@
             ],
             "profile-image": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_98d_ovP_mli_[G].png"
-            ]
+            ],
+            "tutorial-html1": "",
+            "tutorial-html2": "",
+            "tutorial-html3": "",
+            "tutorial-html4": "",
+            "tutorial-html5": "",
+            "tutorial-html6": ""
         }
     },
     "widget.7": {
