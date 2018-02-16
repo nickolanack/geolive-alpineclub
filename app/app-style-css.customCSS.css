@@ -63,3 +63,8 @@ foreach($params as $opts){
 .page.form .media-selection .buttonset .icon.image-icon{
 	background-color: #116553;
 }
+
+
+.form-tutorial Image{
+    max-width:300px;
+}
