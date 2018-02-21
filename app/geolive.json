@@ -924,8 +924,12 @@
             "tutorial-html4": "<h2>Viewing stories on the map<\/h2>\r\n\r\nFrom the main screen, click Map to see stories that have been submitted by you and other users.  \r\nYou may also view the Map through a web browser at: <a href=\"https:\/\/alpine.geolive.ca\">alpine.geolive.ca.<\/a>\r\n<br\/>",
             "tutorial-html5": "<h2>Viewing and deleting your stories<\/h2>\r\n\r\nFrom the main screen, click My Stories to view or delete the stories you have submitted.\r\n<br\/>",
             "tutorial-html6": "<h2>Configuring your profile<\/h2>\r\n\r\nFrom the main screen, click Profile to add a photo and your name to your profile. These will be visible to other users when you post stories.\r\n<br\/>",
-            "add-audio": [],
-            "add-video": [],
+            "add-audio": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/WoT_Jy3_y_[G]_[ImAgE].png"
+            ],
+            "add-video": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/NNS_[G]_z7I_Bwx_[ImAgE].png"
+            ],
             "add-image": []
         }
     },
