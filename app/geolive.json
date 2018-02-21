@@ -301,6 +301,33 @@
                     "default": "Create Marker",
                     "label": "create-marker-label"
                 },
+                "add-audio": {
+                    "type": "images",
+                    "name": "add-audio",
+                    "default": [],
+                    "label": "Add Audio",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
+                "add-video": {
+                    "type": "images",
+                    "name": "add-video",
+                    "default": [],
+                    "label": "Add Video",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
+                "add-image": {
+                    "type": "images",
+                    "name": "add-image",
+                    "default": [],
+                    "label": "Add Image",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
                 "record-audio": {
                     "type": "images",
                     "name": "record-audio",
@@ -896,7 +923,10 @@
             "tutorial-html3": "<br\/>\r\nSelect a category for tagging your story... then click Save and your story will be uploaded and shared on the interactive map.\r\n<br\/>",
             "tutorial-html4": "<h2>Viewing stories on the map<\/h2>\r\n\r\nFrom the main screen, click Map to see stories that have been submitted by you and other users.  \r\nYou may also view the Map through a web browser at: <a href=\"https:\/\/alpine.geolive.ca\">alpine.geolive.ca.<\/a>\r\n<br\/>",
             "tutorial-html5": "<h2>Viewing and deleting your stories<\/h2>\r\n\r\nFrom the main screen, click My Stories to view or delete the stories you have submitted.\r\n<br\/>",
-            "tutorial-html6": "<h2>Configuring your profile<\/h2>\r\n\r\nFrom the main screen, click Profile to add a photo and your name to your profile. These will be visible to other users when you post stories.\r\n<br\/>"
+            "tutorial-html6": "<h2>Configuring your profile<\/h2>\r\n\r\nFrom the main screen, click Profile to add a photo and your name to your profile. These will be visible to other users when you post stories.\r\n<br\/>",
+            "add-audio": [],
+            "add-video": [],
+            "add-image": []
         }
     },
     "widget.7": {
