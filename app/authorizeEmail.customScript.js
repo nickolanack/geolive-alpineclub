@@ -1,7 +1,10 @@
 $clientId=GetClient()->getUserId();
 //user must be logged in
 if($clientId<=0){
-    return false;
+    //return false;
+    return array(
+        "text"=>"unable to resolve your account"
+    );
 }
 
 $email=$json->email;
@@ -9,7 +12,11 @@ $email=$json->email;
 //must submit an email address
 //TODO: validate email address
 if(empty($email)){
-    return false;
+    //return false;
+    
+    return array(
+        "text"=>"The email field was empty"
+    );
 }
 $validEmail=false;
 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
