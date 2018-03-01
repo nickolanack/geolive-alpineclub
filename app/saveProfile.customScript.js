@@ -44,8 +44,6 @@ if($client['id']>0){
     
     
 }
-return $parameters;
-
 
 
 
