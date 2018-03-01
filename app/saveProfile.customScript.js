@@ -22,7 +22,7 @@ GetPlugin('Attributes');
 $parameters=array();
 $parameters['client']=($client=GetClient()->getUserMetadata());
 $parameters['account-authorized']=false;
-$parameters['account-profile-image']=GetWidget('mobile-app-config')->getParameter('profile-image']);
+$parameters['account-profile-image']=GetWidget('mobile-app-config')->getParameter('profile-image');
 if($client['id']>0){
     GetPlugin('Attributes');
     $attributes=(new attributes\Record('deviceUserAttributes'))->getValues($client['id'],'user');
