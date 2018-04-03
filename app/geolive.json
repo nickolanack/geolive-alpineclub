@@ -142,8 +142,9 @@
         "parameters": {
             "enableLayerSyncronization": true,
             "onlyShowMarkersInIconset": false,
-            "tileCachePath": "",
             "googleMapsServerApiKey": "",
+            "googleMapsVersion": "",
+            "tileCachePath": "",
             "layerDisplayFilterScript": "",
             "formatMapitemScript": "plugin.Maps.17.formatMapitemScript.js"
         }
@@ -1385,6 +1386,17 @@
             "widgetTitle": "deleteItem",
             "target": "deleteItem",
             "readAccess": "public"
+        }
+    },
+    "widget.35": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "templateName": "{target}",
+            "requireTarget": true,
+            "onRenderApplictionScript": ""
         }
     }
 }
