@@ -1499,5 +1499,12 @@
             "widgetTitle": "module..text",
             "target": "module..text"
         }
+    },
+    "widget.38": {
+        "name": "Url Variables Parser",
+        "instance": "UrlVariablesBehavior",
+        "parameters": {
+            "target": "map.1"
+        }
     }
 }
