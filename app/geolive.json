@@ -1504,7 +1504,13 @@
         "name": "Url Variables Parser",
         "instance": "UrlVariablesBehavior",
         "parameters": {
-            "target": "map.1"
+            "target": "map.xxx",
+            "maxZoom": true,
+            "onFeatureDoesNotExist": "alert(\"mapitem does not exist or you do not have access.\");",
+            "onUserDoesNotHaveAccessToFeature": "alert(\"mapitem does not exist or you do not have access.\");",
+            "widgetTitle": "",
+            "readAccess": "public",
+            "position": "RIGHT_CENTER"
         }
     }
 }
