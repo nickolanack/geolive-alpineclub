@@ -1435,12 +1435,6 @@
             "requireTarget": true,
             "onRenderApplictionScript": "",
             "metadata": {
-                "positionList": [
-                    "title",
-                    "content",
-                    "footer",
-                    "menu"
-                ],
                 "positions": {
                     "title": {
                         "modules": [
@@ -1453,14 +1447,19 @@
                         ]
                     },
                     "footer": {
-                        "modules": [
-                            "featuredItemDetail.metadata.positions.footer.modules.0.json"
-                        ]
+                        "modules": []
                     },
                     "menu": {
                         "modules": []
                     }
-                }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
             },
             "readAccess": "public"
         }
