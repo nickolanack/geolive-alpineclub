@@ -39,3 +39,13 @@ main#content .side-bar-menu {
     padding-top: 85px;
     padding-left: 35px;
 }
+
+.ui-view.recent-item {
+    max-width: 400px;
+    min-width: 350px;
+    vertical-align: top;
+    margin: 10px;
+    background: rgba(0,0,0,0.05);
+    display: inline-block;
+    min-height: 300px;
+}
