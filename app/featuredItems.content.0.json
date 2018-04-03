@@ -17,7 +17,7 @@
         "filterModulesScript": "return list",
         "itemButtonsScript": "return [];",
         "insertAtTop": false,
-        "getItemListScript": "return item;",
+        "getItemListScript": "\nvar itemlist=<?php\nGetPlugin('Maps');\n\n\n$layer=(int)$json->layer;\n$defaultProfileIcon=GetWidget(\"mobile-app-config\")->getParameter(\"profile-image\")[0];\n\necho json_encode(array(\n    \"items\"=>(new spatial\\Features())->listLayerItems($layer)\n        ->appendUserInfo()\n        ->appendUserAttributes('deviceUserAttributes')\n        ->map(function($item)use($defaultProfileIcon){\n            \n            $profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];\n            $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=false;\n            if(empty($profileIcon)||(!HtmlDocument()->isLocalFileUrl($profileIcon))){\n                $item['user-attributes']['deviceUserAttributes']['profileImage']=$defaultProfileIcon;\n                $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=true;\n            }\n            \n            \n            \n            \n            \n            \n            return $item;\n            \n        })\n    ));\n\n\n?>\n\nreturn itemlist;",
         "formatItemListScript": "return list;",
         "formatListItemModuleScript": "return item;",
         "emptyNamedView": "emptyListView",
