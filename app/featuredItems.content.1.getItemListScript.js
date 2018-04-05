@@ -12,21 +12,22 @@ echo '/*List Layer: '.$layer.': '.date("Y-m-d H:i:s").'*/ ';
 
 $list=(new spatial\Features())->listLayerItems($layer)
         ->appendUserInfo()
-        ->appendUserAttributes('deviceUserAttributes')
-        ->map(function($item)use($defaultProfileIcon){
+        //->appendUserAttributes('deviceUserAttributes')
+        // ->map(function($item)use($defaultProfileIcon){
             
-            $profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
-            $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=false;
-            if(empty($profileIcon)||(!HtmlDocument()->isLocalFileUrl($profileIcon))){
-                $item['user-attributes']['deviceUserAttributes']['profileImage']=$defaultProfileIcon;
-                $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=true;
-            }
+        //     $profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
+        //     $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=false;
+        //     if(empty($profileIcon)||(!HtmlDocument()->isLocalFileUrl($profileIcon))){
+        //         $item['user-attributes']['deviceUserAttributes']['profileImage']=$defaultProfileIcon;
+        //         $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=true;
+        //     }
             
-            echo '/*'.json_encode($item).'*/ ';
+        //     echo '/*'.json_encode($item).'*/ ';
             
-            return $item;
+        //     return $item;
             
-        });
+        // });
+        ->get();
         
     usort($list, function($a, $b){
         return -strcmp($a['creationDate'], $b['creationDate']);
