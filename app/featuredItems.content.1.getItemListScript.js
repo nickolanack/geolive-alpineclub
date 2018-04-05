@@ -6,7 +6,8 @@ GetPlugin('Maps');
 $layer=1;
 $defaultProfileIcon=GetWidget("mobile-app-config")->getParameter("profile-image")[0];
 
-echo json_encode(array_slice((new spatial\Features())->listLayerItems($layer)
+
+$list=(new spatial\Features())->listLayerItems($layer)
         ->appendUserInfo()
         ->appendUserAttributes('deviceUserAttributes')
         //->sort('creationDate')
@@ -26,9 +27,13 @@ echo json_encode(array_slice((new spatial\Features())->listLayerItems($layer)
             
             return $item;
             
-        })
-        , 0, 5)
-    );
+        });
+        
+    usort($list, function($a, $b){
+        return strcmp($a['creationDate'], $b['creationDate']);
+    })
+
+echo json_encode(array_slice($list , 0, 5));
 
 
 ?>
