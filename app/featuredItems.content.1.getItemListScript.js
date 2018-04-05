@@ -19,6 +19,8 @@ $list=(new spatial\Features())->listLayerItems($layer)
                 $item['user-attributes']['deviceUserAttributes']['isDefaultProfileImage']=true;
             }
             
+            echo '/*'.json_encode($item).'*/ ';
+            
             return $item;
             
         });
