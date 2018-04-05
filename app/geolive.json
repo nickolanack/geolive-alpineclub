@@ -1267,7 +1267,7 @@
             "target": "mainView",
             "templateName": "mainView",
             "requireTarget": false,
-            "onRenderApplictionScript": "",
+            "onRenderApplictionScript": "mainView.onRenderApplictionScript.js",
             "metadata": {
                 "positions": {
                     "title": {
