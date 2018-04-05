@@ -30,7 +30,7 @@ $list=(new spatial\Features())->listLayerItems($layer)
     echo json_encode(array_slice($list, 0, 5));
 
 
-?>
+?>;
 
 return itemlist.map(function(item){
     
