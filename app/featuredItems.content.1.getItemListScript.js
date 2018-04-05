@@ -8,7 +8,7 @@ $defaultProfileIcon=GetWidget("mobile-app-config")->getParameter("profile-image"
 
 //throw new \Exception('idk');
 
-echo '/*'.date("Y-m-d H:i:s").'*/ ';
+echo '/*List Layer: '.$layer.': '.date("Y-m-d H:i:s").'*/ ';
 
 $list=(new spatial\Features())->listLayerItems($layer)
         ->appendUserInfo()
