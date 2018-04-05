@@ -1528,7 +1528,7 @@
         "parameters": {
             "widgetTitle": "Link Account",
             "target": "linkAccount",
-            "customScript": "",
+            "customScript": "Link Account.customScript.js",
             "readAccess": "public"
         }
     }
