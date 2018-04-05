@@ -1521,5 +1521,14 @@
             "readAccess": "public",
             "position": "RIGHT_CENTER"
         }
+    },
+    "widget.39": {
+        "name": "Function",
+        "instance": "UserFunction",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "customScript": ""
+        }
     }
 }
