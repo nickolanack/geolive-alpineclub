@@ -1475,8 +1475,8 @@
                                 "type": "FieldValue",
                                 "config": {
                                     "loadAsync": false,
-                                    "fieldLabelScript": "return \"Created\";",
-                                    "fieldValueScript": "return item.getCreationDate();",
+                                    "fieldLabelScript": "return \"Created \";",
+                                    "fieldValueScript": "featuredItemDetail.metadata.positions.content.modules.1.config.fieldValueScript.js",
                                     "formatElementScript": ""
                                 }
                             }
