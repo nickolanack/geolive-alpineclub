@@ -1531,5 +1531,247 @@
             "customScript": "Link Account.customScript.js",
             "readAccess": "public"
         }
+    },
+    "widget.40": {
+        "name": "Attributes Table",
+        "instance": "AttributesTable",
+        "parameters": {
+            "widgetTitle": "markerAttributes",
+            "metadata": {
+                "title": "markerAttributes",
+                "_tableDiagramState": {
+                    "x": 376,
+                    "y": 206
+                },
+                "_diagramState": {
+                    "x": 376,
+                    "y": 206
+                },
+                "appliesTo": [
+                    "marker"
+                ],
+                "_typeDiagramState": {
+                    "x": 100,
+                    "y": 300
+                },
+                "readAccess": "public",
+                "maxEntries": 1,
+                "createAutomatically": 1,
+                "description": "",
+                "fields": [
+                    "markerAttributes.metadata.fields.0.json"
+                ]
+            },
+            "target": "markerAttributes"
+        }
+    },
+    "widget.41": {
+        "name": "Attributes Table",
+        "instance": "AttributesTable",
+        "parameters": {
+            "widgetTitle": "deviceUserAttributes",
+            "metadata": {
+                "title": "deviceUserAttributes",
+                "_tableDiagramState": {
+                    "x": 322,
+                    "y": 275
+                },
+                "_diagramState": {
+                    "x": 322,
+                    "y": 275
+                },
+                "appliesTo": [
+                    "user"
+                ],
+                "_typeDiagramState": {
+                    "x": 100,
+                    "y": 300
+                },
+                "readAccess": "public",
+                "maxEntries": 1,
+                "createAutomatically": 1,
+                "description": "",
+                "fields": [
+                    "deviceUserAttributes.metadata.fields.0.json",
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "authEmailStatus",
+                        "label": "authEmailStatus",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "authorizedEmail",
+                        "label": "authorizedEmail",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "profileImage",
+                        "label": "profileImage",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": true,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "profileName",
+                        "label": "User Name",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    }
+                ]
+            },
+            "target": "deviceUserAttributes"
+        }
     }
 }

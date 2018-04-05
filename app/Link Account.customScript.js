@@ -8,6 +8,12 @@ if(!empty($users)){
     echo 'Nothing to link';
 }
 
+GetPlugin('Attributes');
+
+    echo (new attributes\Filter())->toQuery('{"join":"intersect","table":"userAttributes","set":"*","filters":[
+                        {"field":"","authorizedEmail":"' . $linkEmailAddress . '"}
+                        
+                    ]}');
 
 
 ?>
