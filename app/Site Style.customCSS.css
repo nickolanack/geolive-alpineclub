@@ -42,7 +42,7 @@ main#content .side-bar-menu {
 
 .ui-view.recent-item {
     max-width: 400px;
-    min-width: 350px;
+    min-width: calc( 20% - 20px );
     vertical-align: top;
     margin: 10px;
     background: rgba(0,0,0,0.05);
