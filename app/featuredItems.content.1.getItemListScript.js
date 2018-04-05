@@ -6,6 +6,7 @@ GetPlugin('Maps');
 $layer=1;
 $defaultProfileIcon=GetWidget("mobile-app-config")->getParameter("profile-image")[0];
 
+throw new \Exception('idk');
 
 $list=(new spatial\Features())->listLayerItems($layer)
         ->appendUserInfo()
