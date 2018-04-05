@@ -1470,7 +1470,16 @@
                     },
                     "content": {
                         "modules": [
-                            "featuredItemDetail.metadata.positions.content.modules.0.json"
+                            "featuredItemDetail.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "FieldValue",
+                                "config": {
+                                    "loadAsync": false,
+                                    "fieldLabelScript": "return \"Created\";",
+                                    "fieldValueScript": "return item.getCreationDate();",
+                                    "formatElementScript": ""
+                                }
+                            }
                         ]
                     },
                     "footer": {
