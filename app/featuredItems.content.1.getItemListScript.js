@@ -31,8 +31,8 @@ $list=(new spatial\Features())->listLayerItems($layer)
     usort($list, function($a, $b){
         return -strcmp($a['creationDate'], $b['creationDate']);
     });
-    echo json_encode($list, 0, 5);
-    //echo json_encode(array_slice($list, 0, 5));
+    //echo json_encode($list, 0, 5);
+    echo json_encode(array_slice($list, 0, 5));
 
 
 ?>;
