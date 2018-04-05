@@ -7,10 +7,10 @@ $layer=1;
 $defaultProfileIcon=GetWidget("mobile-app-config")->getParameter("profile-image")[0];
 
 
-$list=(new spatial\Features())->listLayerItems($layer)
+$list=(new spatial\Features())
+        ->listLayerItems($layer)
         ->appendUserInfo()
         ->appendUserAttributes('deviceUserAttributes')
-        //->sort('creationDate')
         ->map(function($item)use($defaultProfileIcon){
             
             $profileIcon=$item['user-attributes']['deviceUserAttributes']['profileImage'];
