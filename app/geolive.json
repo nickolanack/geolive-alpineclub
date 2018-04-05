@@ -1395,7 +1395,7 @@
             "widgetTitle": "featuredItems",
             "target": "featuredItems",
             "templateName": "featuredItems",
-            "requireTarget": true,
+            "requireTarget": false,
             "onRenderApplictionScript": "",
             "metadata": {
                 "positions": {
