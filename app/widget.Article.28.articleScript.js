@@ -1,7 +1,4 @@
-<?php 
 
-    IncludeJSBlock('
-    
         window.addEvent("load",function(){
             
             setTimeout(function(){
@@ -11,9 +8,5 @@
             }, 5000)
             
             
-        })
-    
-    
-    ');
-
-?>
+        });
+ 
