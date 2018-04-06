@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "markerAttributes",
         "description": "",
         "label": "",
@@ -11,13 +11,13 @@
             "appliesTo": [
                 "marker"
             ],
-            "id": "1",
+            "id": 1,
             "suffix": "_9231",
             "description": "",
             "fields": [
                 {
                     "visibility": "public",
-                    "tableId": "1",
+                    "tableId": 1,
                     "tableName": "markerAttributes",
                     "tableSuffix": "_9231",
                     "title": "type",
@@ -51,7 +51,7 @@
         }
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "deviceUserAttributes",
         "description": "",
         "label": "",
@@ -62,13 +62,13 @@
             "appliesTo": [
                 "user"
             ],
-            "id": "2",
+            "id": 2,
             "suffix": "_4028",
             "description": "",
             "fields": [
                 {
                     "visibility": "public",
-                    "tableId": "2",
+                    "tableId": 2,
                     "tableName": "deviceUserAttributes",
                     "tableSuffix": "_4028",
                     "title": "authEmail",
@@ -100,7 +100,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "2",
+                    "tableId": 2,
                     "tableName": "deviceUserAttributes",
                     "tableSuffix": "_4028",
                     "title": "authEmailStatus",
@@ -132,7 +132,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "2",
+                    "tableId": 2,
                     "tableName": "deviceUserAttributes",
                     "tableSuffix": "_4028",
                     "title": "authorizedEmail",
@@ -164,7 +164,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "2",
+                    "tableId": 2,
                     "tableName": "deviceUserAttributes",
                     "tableSuffix": "_4028",
                     "title": "profileImage",
@@ -196,7 +196,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "2",
+                    "tableId": 2,
                     "tableName": "deviceUserAttributes",
                     "tableSuffix": "_4028",
                     "title": "profileName",

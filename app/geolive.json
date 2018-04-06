@@ -1182,26 +1182,6 @@
             "readAccess": "public"
         }
     },
-    "widget.30": {
-        "name": "Ajax Method",
-        "instance": "AjaxMethod",
-        "parameters": {
-            "customScript": "deauthorizeEmail.customScript.js",
-            "widgetTitle": "deauthorizeEmail",
-            "target": "deauthorizeEmail",
-            "readAccess": "public"
-        }
-    },
-    "widget.29": {
-        "name": "Ajax Method",
-        "instance": "AjaxMethod",
-        "parameters": {
-            "customScript": "saveProfile.customScript.js",
-            "widgetTitle": "saveProfile",
-            "target": "saveProfile",
-            "readAccess": "public"
-        }
-    },
     "widget.16": {
         "name": "Configuration",
         "instance": "Configuration",
@@ -1350,13 +1330,23 @@
             "articleHtml": ""
         }
     },
-    "widget.32": {
+    "widget.29": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
         "parameters": {
-            "customScript": "listMarkers.customScript.js",
-            "widgetTitle": "listMarkers",
-            "target": "listMarkers",
+            "customScript": "saveProfile.customScript.js",
+            "widgetTitle": "saveProfile",
+            "target": "saveProfile",
+            "readAccess": "public"
+        }
+    },
+    "widget.30": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "customScript": "deauthorizeEmail.customScript.js",
+            "widgetTitle": "deauthorizeEmail",
+            "target": "deauthorizeEmail",
             "readAccess": "public"
         }
     },
@@ -1366,6 +1356,16 @@
         "parameters": {
             "articleTitle": "You did it! Thanks.",
             "articleHtml": ""
+        }
+    },
+    "widget.32": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "customScript": "listMarkers.customScript.js",
+            "widgetTitle": "listMarkers",
+            "target": "listMarkers",
+            "readAccess": "public"
         }
     },
     "widget.33": {
@@ -1510,7 +1510,7 @@
         }
     },
     "widget.38": {
-        "name": "Url Variables Parser",
+        "name": "Map Url Segment Parser",
         "instance": "UrlVariablesBehavior",
         "parameters": {
             "target": "map.1",
