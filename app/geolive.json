@@ -12,7 +12,20 @@
     "plugin.3": {
         "name": "Email",
         "instance": "Email",
-        "parameters": {}
+        "parameters": {
+            "useSmtp": true,
+            "smtpHost": "smtp.gmail.com",
+            "username": "XXXX-XXXX",
+            "password": "XXXX-XXXX",
+            "port": "587",
+            "useMailgun": false,
+            "domain": "",
+            "apiKey": "",
+            "fromEmail": "geolivemap.ca+alpineclub@gmail.com",
+            "fromEmailName": "Alpine Club of Canada Geolive Map",
+            "recieveMail": false,
+            "recieveMailSecretToken": "XXXX-XXXX"
+        }
     },
     "plugin.4": {
         "name": "Events",
