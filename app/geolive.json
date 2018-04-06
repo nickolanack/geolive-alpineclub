@@ -1368,7 +1368,18 @@
         "instance": "Article",
         "parameters": {
             "articleTitle": "You did it! Thanks.",
-            "articleHtml": ""
+            "articleHtml": "",
+            "className": "",
+            "articleCSS": "",
+            "articleScript": "",
+            "templateVariablesScript": "",
+            "afterHeader": "<hr\/>",
+            "images": [
+                "users_files\/user_files_1\/Uploads\/k4X_[G]_sqR_ItX_[ImAgE].jpeg"
+            ],
+            "widgetTitle": "",
+            "target": "Links.action-view.Article.onAuthorizeEmailAddressForDevice",
+            "readAccess": "public"
         }
     },
     "widget.32": {
