@@ -1340,7 +1340,16 @@
         "instance": "Article",
         "parameters": {
             "articleTitle": "That link is expired or invalid",
-            "articleHtml": ""
+            "articleHtml": "",
+            "className": "",
+            "articleCSS": "",
+            "articleScript": "widget.Article.28.articleScript.js",
+            "templateVariablesScript": "",
+            "afterHeader": "<hr\/>",
+            "images": [],
+            "widgetTitle": "",
+            "target": "Links.action-view.Article.error",
+            "readAccess": "public"
         }
     },
     "widget.29": {
