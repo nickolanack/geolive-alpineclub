@@ -1379,7 +1379,7 @@
             "articleTitle": "Your activated! Great Job!",
             "articleHtml": "",
             "className": "",
-            "articleCSS": "",
+            "articleCSS": "widget.Article.31.articleCSS.css",
             "articleScript": "widget.Article.31.articleScript.js",
             "templateVariablesScript": "",
             "afterHeader": "<hr\/>",
