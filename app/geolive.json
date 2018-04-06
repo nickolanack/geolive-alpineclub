@@ -1376,11 +1376,11 @@
         "name": "Article",
         "instance": "Article",
         "parameters": {
-            "articleTitle": "You did it! Thanks.",
+            "articleTitle": "Your activated! Great Job!",
             "articleHtml": "",
             "className": "",
             "articleCSS": "",
-            "articleScript": "",
+            "articleScript": "widget.Article.31.articleScript.js",
             "templateVariablesScript": "",
             "afterHeader": "<hr\/>",
             "images": [
