@@ -1342,11 +1342,13 @@
             "articleTitle": "That link is expired or invalid",
             "articleHtml": "",
             "className": "",
-            "articleCSS": "",
+            "articleCSS": "widget.Article.28.articleCSS.css",
             "articleScript": "widget.Article.28.articleScript.js",
             "templateVariablesScript": "",
             "afterHeader": "<hr\/>",
-            "images": [],
+            "images": [
+                "users_files\/user_files_1\/Uploads\/ivK_KdZ_[ImAgE]_mgd_[G].jpeg"
+            ],
             "widgetTitle": "",
             "target": "Links.action-view.Article.error",
             "readAccess": "public"

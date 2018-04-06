@@ -1,0 +1,28 @@
+article {
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+}
+
+
+body {
+    text-align: center;
+}
+
+p.author {
+    display: none;
+}
+
+hr {
+    border: none;
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: white;
+    text-shadow: 0 0 3px black;
+    font-size: 30px;
+}
