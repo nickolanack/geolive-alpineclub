@@ -15,6 +15,6 @@ GetPlugin('Attributes');
                         
                     ]}');
 
-    print_r($results, true);
+    echo 'Results: '.print_r($results, true);
 
 ?>
