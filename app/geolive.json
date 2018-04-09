@@ -12,7 +12,20 @@
     "plugin.3": {
         "name": "Email",
         "instance": "Email",
-        "parameters": {}
+        "parameters": {
+            "useSmtp": true,
+            "smtpHost": "smtp.gmail.com",
+            "username": "XXXX-XXXX",
+            "password": "XXXX-XXXX",
+            "port": "587",
+            "useMailgun": false,
+            "domain": "",
+            "apiKey": "",
+            "fromEmail": "geolivemap.ca+alpineclub@gmail.com",
+            "fromEmailName": "Alpine Club of Canada Geolive Map",
+            "recieveMail": false,
+            "recieveMailSecretToken": "XXXX-XXXX"
+        }
     },
     "plugin.4": {
         "name": "Events",
@@ -1182,26 +1195,6 @@
             "readAccess": "public"
         }
     },
-    "widget.30": {
-        "name": "Ajax Method",
-        "instance": "AjaxMethod",
-        "parameters": {
-            "customScript": "deauthorizeEmail.customScript.js",
-            "widgetTitle": "deauthorizeEmail",
-            "target": "deauthorizeEmail",
-            "readAccess": "public"
-        }
-    },
-    "widget.29": {
-        "name": "Ajax Method",
-        "instance": "AjaxMethod",
-        "parameters": {
-            "customScript": "saveProfile.customScript.js",
-            "widgetTitle": "saveProfile",
-            "target": "saveProfile",
-            "readAccess": "public"
-        }
-    },
     "widget.16": {
         "name": "Configuration",
         "instance": "Configuration",
@@ -1354,20 +1347,30 @@
             "templateVariablesScript": "",
             "afterHeader": "<hr\/>",
             "images": [
-                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/tBG_jF_59C_[ImAgE]_[G].jpeg"
+                "users_files\/user_files_1\/Uploads\/ivK_KdZ_[ImAgE]_mgd_[G].jpeg"
             ],
             "widgetTitle": "",
             "target": "Links.action-view.Article.error",
             "readAccess": "public"
         }
     },
-    "widget.32": {
+    "widget.29": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
         "parameters": {
-            "customScript": "listMarkers.customScript.js",
-            "widgetTitle": "listMarkers",
-            "target": "listMarkers",
+            "customScript": "saveProfile.customScript.js",
+            "widgetTitle": "saveProfile",
+            "target": "saveProfile",
+            "readAccess": "public"
+        }
+    },
+    "widget.30": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "customScript": "deauthorizeEmail.customScript.js",
+            "widgetTitle": "deauthorizeEmail",
+            "target": "deauthorizeEmail",
             "readAccess": "public"
         }
     },
@@ -1383,10 +1386,20 @@
             "templateVariablesScript": "",
             "afterHeader": "<hr\/>",
             "images": [
-                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_1cy_[G]_QFA_4cS.jpeg"
+                "users_files\/user_files_1\/Uploads\/k4X_[G]_sqR_ItX_[ImAgE].jpeg"
             ],
             "widgetTitle": "",
             "target": "Links.action-view.Article.onAuthorizeEmailAddressForDevice",
+            "readAccess": "public"
+        }
+    },
+    "widget.32": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "customScript": "listMarkers.customScript.js",
+            "widgetTitle": "listMarkers",
+            "target": "listMarkers",
             "readAccess": "public"
         }
     },
@@ -1532,7 +1545,7 @@
         }
     },
     "widget.38": {
-        "name": "Url Variables Parser",
+        "name": "Map Url Segment Parser",
         "instance": "UrlVariablesBehavior",
         "parameters": {
             "target": "map.1",
