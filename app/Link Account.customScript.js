@@ -10,10 +10,15 @@ if(!empty($users)){
 
 GetPlugin('Attributes');
 
-    $results= (new attributes\Filter())->query('{"join":"intersect","table":"deviceUserAttributes","set":"*","filters":[
-                        {"field":"authorizedEmail","value":"' . $linkEmailAddress . '"}
-                        
-                    ]}');
+    $results= (new attributes\Filter())->query('
+    
+        {
+            "table":"deviceUserAttributes",
+            "set":"*",
+            "filters":[
+                {"field":"authorizedEmail","value":"' . $linkEmailAddress . '"}
+            ]}
+        ');
 
     echo 'Results: '.print_r($results, true);
 
