@@ -3,9 +3,9 @@
 $linkEmailAddress='nickblackwell82@gmail.com';
 $users=Core::GetUsersource()->emailExists($linkEmailAddress);
 if(!empty($users)){
-    echo 'Should Link Account! '.json_encode($users);
+    echo 'Should link devices to: ! '.json_encode($users);
 }else{
-    echo 'Nothing to link';
+    echo 'No real account to link!';
 }
 
 GetPlugin('Attributes');
@@ -14,9 +14,10 @@ GetPlugin('Attributes');
     
         {
             "table":"deviceUserAttributes",
-            "show":["authEmailStatus"],
+           
             "filters":[
-                {"field":"authorizedEmail","value":"' . $linkEmailAddress . '"}
+                {"field":"authorizedEmail","value":"' . $linkEmailAddress . '"},
+                {"field":"authEmailStatus","value":"approved"}
             ]}
         ');
 
