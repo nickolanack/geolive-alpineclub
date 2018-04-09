@@ -27,7 +27,7 @@ GetPlugin('Attributes');
     if(!empty($devices)){
             
         if(count($devices)==1&&empty($users)){
-            Emit('onInitializeDeviceAccount', $devices[0]));
+            Emit('onInitializeDeviceAccount', $devices[0]);
             return;
         }
         
