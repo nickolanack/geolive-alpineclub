@@ -14,7 +14,7 @@ GetPlugin('Attributes');
     
         {
             "table":"deviceUserAttributes",
-            "show":['authEmailStatus'],
+            "show":["authEmailStatus"],
             "filters":[
                 {"field":"authorizedEmail","value":"' . $linkEmailAddress . '"}
             ]}
