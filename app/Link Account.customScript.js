@@ -10,7 +10,7 @@ if(!empty($users)){
 
 GetPlugin('Attributes');
 
-    $results= (new attributes\Filter())->query('
+    $devices= (new attributes\Filter())->query('
     
         {
             "table":"deviceUserAttributes",
@@ -21,6 +21,28 @@ GetPlugin('Attributes');
             ]}
         ');
 
-    echo 'Results: '.print_r($results, true);
+    echo 'Results: '.print_r($devices, true);
+    
+    
+    if(!empty($devices)){
+            
+        if(count($devices)==1&&empty($users)){
+            Emit('onInitializeDeviceAccount', $devices[0]));
+            return;
+        }
+        
+        if(count($devices)>1){
+            Emit('onMergeDeviceAccounts', array('devices'=>$devices));
+            return;
+        }
+        
+        
+        if(count($devices)==1&&!empty($users)){
+            Emit('onLinkDeviceAccount', array('device'=>$device[0], 'user'=>$users[0]));
+            return;
+        }
+        
+    }
+    
 
 ?>
