@@ -35,7 +35,7 @@ GetPlugin('Attributes');
             Emit('onMergeDeviceAccounts', array('devices'=>$devices));
             
             foreach($devices as $device){
-                print_r9(GetPlugin('Apps')->getUsersDeviceIds($device['mapitem']))
+                print_r(GetPlugin('Apps')->getUsersDeviceIds($device['mapitem']));
                 
             }
             
