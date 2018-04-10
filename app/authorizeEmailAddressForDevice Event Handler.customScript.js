@@ -57,6 +57,8 @@ GetPlugin('Attributes');
             }, $devices);
             
             $userId=GetPlugin('Apps')->mergeDeviceUsers($usersIdList);
+            GetPlugin('Maps')->mergeFeatureUsers($usersIdList, $userId);
+            
             
             GetLogger('test')->info('Done', array());
             
