@@ -33,6 +33,15 @@ GetPlugin('Attributes');
         
         if(count($devices)>1){
             Emit('onMergeDeviceAccounts', array('devices'=>$devices));
+            
+            foreach($devices as $device){
+                print_r9(GetPlugin('Apps')->getUsersDeviceIds($device['mapitem']))
+                
+            }
+            
+            
+            
+            
             return;
         }
         
@@ -43,6 +52,10 @@ GetPlugin('Attributes');
         }
         
     }
+    
+    
+    
+    
     
 
 ?>
