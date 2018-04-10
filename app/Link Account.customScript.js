@@ -33,8 +33,8 @@ GetPlugin('Attributes');
         
         if(count($devices)>1){
             
-            return GetPlugin('Apps')->mergeDevices(array_map(function($d){
-                return $device->mapitem;
+            return GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
+                return $d->mapitem;
             }, $devices));
             
         }
