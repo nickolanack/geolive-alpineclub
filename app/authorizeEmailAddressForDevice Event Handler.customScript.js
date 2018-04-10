@@ -36,7 +36,7 @@ GetPlugin('Attributes');
     ');
     
     
-     GetLogger('test')->info(' Test Test', $devices);
+     
 
     //echo 'Results: '.print_r($devices, true);
     
@@ -49,9 +49,13 @@ GetPlugin('Attributes');
           
         }else if(count($devices)>1){
             
+            GetLogger('test')->info('Merge', array());
+            
             GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
                 return $d->mapitem;
             }, $devices));
+            
+            GetLogger('test')->info('Done', array());
             
         }else if(count($devices)==1&&!empty($users)){
 
