@@ -7,11 +7,12 @@
 //    'email'=>$json->email
 //));
 
+$userId=$eventArgs->user;
 
 GetPlugin('Attributes');
 
 (new attributes\Record('deviceUserAttributes'))
-    ->setValues($eventArgs->user, 'user', array(
+    ->setValues($userId, 'user', array(
         'authorizedEmail'=>$eventArgs->email,
         'authEmailStatus'=>'approved'
     ));
@@ -51,7 +52,7 @@ GetPlugin('Attributes');
             
             GetLogger('test')->info('Merge', array());
             
-            GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
+            $userId=GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
                 return $d->mapitem;
             }, $devices));
             
@@ -66,16 +67,17 @@ GetPlugin('Attributes');
     }
 
 
-
 GetPlugin('Apps')
     ->notifyUsersDevices(
-        $eventArgs->user, 
+        $userId, 
         array(
             "data"=>array("authorized"=>true),
             "parameters"=>array("account-authorized"=>true),
-            "text"=>"Your account has been authorized"
+            "text"=>"Your account has been authorized",
+            "logout"=>$userId!==$eventArgs->user
         )
     );
+
 
 
 ?>
