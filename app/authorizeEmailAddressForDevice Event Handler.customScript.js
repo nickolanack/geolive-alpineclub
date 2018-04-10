@@ -19,6 +19,8 @@ GetPlugin('Attributes');
 //user should now have matching attributes: authorizedEmail=authEmail
 
 
+    GetLogger('test')->info(' Test Test', array());
+
     $users=array();
     $devices= (new attributes\Filter())->query('
     
@@ -31,7 +33,7 @@ GetPlugin('Attributes');
             ]
         
         }
-        ');
+    ');
 
     //echo 'Results: '.print_r($devices, true);
     
