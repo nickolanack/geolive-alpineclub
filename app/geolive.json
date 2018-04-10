@@ -1329,9 +1329,9 @@
         "name": "Function",
         "instance": "UserFunction",
         "parameters": {
-            "widgetTitle": "authorizeEmailAddressForDevice",
+            "widgetTitle": "authorizeEmailAddressForDevice Event Handler",
             "target": "onAuthorizeEmailAddressForDevice",
-            "customScript": "authorizeEmailAddressForDevice.customScript.js",
+            "customScript": "authorizeEmailAddressForDevice Event Handler.customScript.js",
             "readAccess": "public"
         }
     },
