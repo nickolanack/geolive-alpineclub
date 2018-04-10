@@ -19,6 +19,45 @@ GetPlugin('Attributes');
 //user should now have matching attributes: authorizedEmail=authEmail
 
 
+GetPlugin('Attributes');
+
+    $devices= (new attributes\Filter())->query('
+    
+        {
+            "table":"deviceUserAttributes",
+           
+            "filters":[
+                {"field":"authorizedEmail","value":"' . $eventArgs->email . '"},
+                {"field":"authEmailStatus","value":"approved"}
+            ]}
+        ');
+
+    //echo 'Results: '.print_r($devices, true);
+    
+    
+    if(!empty($devices)){
+            
+        if(count($devices)==1&&empty($users)){
+            Emit('onInitializeDeviceAccount', $devices[0]);
+            return;
+        }
+        
+        if(count($devices)>1){
+            
+            return GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
+                return $d->mapitem;
+            }, $devices));
+            
+        }
+        
+        
+        if(count($devices)==1&&!empty($users)){
+            Emit('onLinkDeviceAccount', array('device'=>$device[0], 'user'=>$users[0]));
+            return;
+        }
+        
+    }
+
 
 
 GetPlugin('Apps')
