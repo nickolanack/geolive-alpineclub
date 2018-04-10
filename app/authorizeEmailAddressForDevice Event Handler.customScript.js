@@ -38,22 +38,19 @@ GetPlugin('Attributes');
     if(!empty($devices)){
             
         if(count($devices)==1&&empty($users)){
+ 
             Emit('onInitializeDeviceAccount', $devices[0]);
-            return;
-        }
-        
-        if(count($devices)>1){
+          
+        }else if(count($devices)>1){
             
-            return GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
+            GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
                 return $d->mapitem;
             }, $devices));
             
-        }
-        
-        
-        if(count($devices)==1&&!empty($users)){
+        }else if(count($devices)==1&&!empty($users)){
+
             Emit('onLinkDeviceAccount', array('device'=>$device[0], 'user'=>$users[0]));
-            return;
+
         }
         
     }
