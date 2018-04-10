@@ -52,9 +52,11 @@ GetPlugin('Attributes');
             
             GetLogger('test')->info('Merge', array());
             
-            $userId=GetPlugin('Apps')->mergeDeviceUsers(array_map(function($d){
+            $usersIdList=array_map(function($d){
                 return $d->mapitem;
-            }, $devices));
+            }, $devices);
+            
+            $userId=GetPlugin('Apps')->mergeDeviceUsers($usersIdList);
             
             GetLogger('test')->info('Done', array());
             
