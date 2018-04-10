@@ -19,8 +19,7 @@ GetPlugin('Attributes');
 //user should now have matching attributes: authorizedEmail=authEmail
 
 
-GetPlugin('Attributes');
-
+    $users=array();
     $devices= (new attributes\Filter())->query('
     
         {
@@ -29,7 +28,9 @@ GetPlugin('Attributes');
             "filters":[
                 {"field":"authorizedEmail","value":"' . $eventArgs->email . '"},
                 {"field":"authEmailStatus","value":"approved"}
-            ]}
+            ]
+        
+        }
         ');
 
     //echo 'Results: '.print_r($devices, true);
