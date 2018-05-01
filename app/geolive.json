@@ -14,9 +14,9 @@
         "instance": "Email",
         "parameters": {
             "useSmtp": false,
-            "smtpHost": "",
-            "username": "",
-            "password": "",
+            "smtpHost": "smtp.gmail.com",
+            "username": "XXXX-XXXX",
+            "password": "XXXX-XXXX",
             "port": "587",
             "useMailgun": false,
             "domain": "",
