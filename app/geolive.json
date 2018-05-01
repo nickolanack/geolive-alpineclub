@@ -977,8 +977,12 @@
             "add-image-library": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/aG9_[ImAgE]_v20_GPI_[G].png"
             ],
-            "edit": [],
-            "delete": []
+            "edit": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/Uoz_Zcs_[ImAgE]_[G]_tU6.png"
+            ],
+            "delete": [
+                "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[ImAgE]_qok_[G]_qUC_O8H.png"
+            ]
         }
     },
     "widget.7": {
