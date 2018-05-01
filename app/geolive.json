@@ -1026,7 +1026,16 @@
                     },
                     "content": {
                         "modules": [
-                            "Popup Content.metadata.positions.content.modules.0.json"
+                            "Popup Content.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "NearbyMapitems",
+                                "config": {
+                                    "className": "",
+                                    "label": "Places Nearby",
+                                    "lineBreak": false,
+                                    "popoverLabelFunction": ""
+                                }
+                            }
                         ]
                     },
                     "footer": {
