@@ -1469,10 +1469,11 @@
                                     "insertAtTop": false,
                                     "getItemListScript": "featuredItems.metadata.positions.content.modules.1.config.getItemListScript.js",
                                     "formatItemListScript": "return list;",
-                                    "formatListItemModuleScript": "return item;",
+                                    "formatListItemModuleScript": "featuredItems.metadata.positions.content.modules.1.config.formatListItemModuleScript.js",
                                     "emptyNamedView": "emptyListView",
                                     "filterItemsScript": "return true;",
-                                    "sortItemsScript": ""
+                                    "sortItemsScript": "",
+                                    "maxItems": "-1"
                                 }
                             }
                         ]
