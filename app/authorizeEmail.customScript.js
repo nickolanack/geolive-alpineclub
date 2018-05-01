@@ -58,7 +58,7 @@ if($validEmail){
     
     
 $subject=(new \core\Template(
-    'activate.device.subject',"Activate your mobile device (".GetClient()->getRealName().") with The Alpine Club"))
+    'activate.device.subject',"Activate your mobile device ({{name}}) with The Alpine Club"))
     ->render(GetClient()->getUserMetadata());
 $body=(new \core\Template(
     'activate.device.body', "You can activate your device by clicking this link: <a href=\"{{link}}\" >Click Here</a>"))
