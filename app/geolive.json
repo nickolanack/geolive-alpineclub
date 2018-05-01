@@ -1835,7 +1835,9 @@
         "parameters": {
             "contentTemplate": "activate-device-body.contentTemplate.html",
             "widgetTitle": "activate.device.body",
-            "target": "activate.device.body"
+            "target": "activate.device.body",
+            "comments": "",
+            "readAccess": "public"
         }
     }
 }
