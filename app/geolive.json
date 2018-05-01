@@ -1824,7 +1824,9 @@
         "parameters": {
             "contentTemplate": "activate-device-subject.contentTemplate.html",
             "widgetTitle": "activate.device.subject",
-            "target": "activate.device.subject"
+            "target": "activate.device.subject",
+            "comments": "",
+            "readAccess": "public"
         }
     },
     "widget.43": {
