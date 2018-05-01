@@ -55,8 +55,17 @@ GetPlugin('Email')->getMailer()
     ->send();
     
 if($validEmail){  
+    
+    
+$subject=(new \core\Template(
+    'activate.device.subject',"Activate your mobile device (".GetClient()->getRealName().") with The Alpine Club"))
+    ->render(GetClient()->getMetadata());
+$body=(new \core\Template(
+    'activate.device.body', "You can activate your device by clicking this link: <a href=\"{{link}}\" >Click Here</a>"))
+    ->render(array_merge(GetClient()->getMetadata(), array("link"=>$clientLink)));  
+    
 GetPlugin('Email')->getMailer()
-    ->mail("Activate your mobile device (".GetClient()->getRealName().") with The Alpine Club", "You can activate your device by clicking this link: <a href=\"".$clientLink."\" >Click Here</a>")
+    ->mail($subject, $body)
     ->to($email)
     ->send();
 }
