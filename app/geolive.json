@@ -12,20 +12,7 @@
     "plugin.3": {
         "name": "Email",
         "instance": "Email",
-        "parameters": {
-            "useSmtp": true,
-            "smtpHost": "smtp.gmail.com",
-            "username": "XXXX-XXXX",
-            "password": "XXXX-XXXX",
-            "port": "587",
-            "useMailgun": false,
-            "domain": "",
-            "apiKey": "",
-            "fromEmail": "geolivemap.ca+alpineclub@gmail.com",
-            "fromEmailName": "Alpine Club of Canada Geolive Map",
-            "recieveMail": false,
-            "recieveMailSecretToken": "XXXX-XXXX"
-        }
+        "parameters": {}
     },
     "plugin.4": {
         "name": "Events",
@@ -338,6 +325,15 @@
                     "name": "add-image",
                     "default": [],
                     "label": "Add Image",
+                    "maxHeight": 128,
+                    "maxWidth": 128,
+                    "limit": 1
+                },
+                "add-image-library": {
+                    "type": "images",
+                    "name": "add-image-library",
+                    "default": [],
+                    "label": "Add Image Library",
                     "maxHeight": 128,
                     "maxWidth": 128,
                     "limit": 1
@@ -946,7 +942,8 @@
             ],
             "add-image": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/[G]_[ImAgE]_4Ll_svI_xCP.png"
-            ]
+            ],
+            "add-image-library": []
         }
     },
     "widget.7": {
@@ -1195,6 +1192,26 @@
             "readAccess": "public"
         }
     },
+    "widget.30": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "customScript": "deauthorizeEmail.customScript.js",
+            "widgetTitle": "deauthorizeEmail",
+            "target": "deauthorizeEmail",
+            "readAccess": "public"
+        }
+    },
+    "widget.29": {
+        "name": "Ajax Method",
+        "instance": "AjaxMethod",
+        "parameters": {
+            "customScript": "saveProfile.customScript.js",
+            "widgetTitle": "saveProfile",
+            "target": "saveProfile",
+            "readAccess": "public"
+        }
+    },
     "widget.16": {
         "name": "Configuration",
         "instance": "Configuration",
@@ -1354,23 +1371,13 @@
             "readAccess": "public"
         }
     },
-    "widget.29": {
+    "widget.32": {
         "name": "Ajax Method",
         "instance": "AjaxMethod",
         "parameters": {
-            "customScript": "saveProfile.customScript.js",
-            "widgetTitle": "saveProfile",
-            "target": "saveProfile",
-            "readAccess": "public"
-        }
-    },
-    "widget.30": {
-        "name": "Ajax Method",
-        "instance": "AjaxMethod",
-        "parameters": {
-            "customScript": "deauthorizeEmail.customScript.js",
-            "widgetTitle": "deauthorizeEmail",
-            "target": "deauthorizeEmail",
+            "customScript": "listMarkers.customScript.js",
+            "widgetTitle": "listMarkers",
+            "target": "listMarkers",
             "readAccess": "public"
         }
     },
@@ -1390,16 +1397,6 @@
             ],
             "widgetTitle": "",
             "target": "Links.action-view.Article.onAuthorizeEmailAddressForDevice",
-            "readAccess": "public"
-        }
-    },
-    "widget.32": {
-        "name": "Ajax Method",
-        "instance": "AjaxMethod",
-        "parameters": {
-            "customScript": "listMarkers.customScript.js",
-            "widgetTitle": "listMarkers",
-            "target": "listMarkers",
             "readAccess": "public"
         }
     },
