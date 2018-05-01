@@ -1,5 +1,4 @@
-
-        window.addEvent("load",function(){
+window.addEvent("load",function(){
             
             setTimeout(function(){
                 
@@ -9,4 +8,3 @@
             
             
         });
- 
