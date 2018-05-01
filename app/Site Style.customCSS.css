@@ -49,3 +49,7 @@ main#content .side-bar-menu {
     display: inline-block;
     min-height: 300px;
 }
+
+.NearbyMapitemsModule>span {
+    margin-right: 5px;
+}
