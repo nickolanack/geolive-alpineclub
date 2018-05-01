@@ -59,10 +59,10 @@ if($validEmail){
     
 $subject=(new \core\Template(
     'activate.device.subject',"Activate your mobile device (".GetClient()->getRealName().") with The Alpine Club"))
-    ->render(GetClient()->getMetadata());
+    ->render(GetClient()->getUserMetadata());
 $body=(new \core\Template(
     'activate.device.body', "You can activate your device by clicking this link: <a href=\"{{link}}\" >Click Here</a>"))
-    ->render(array_merge(GetClient()->getMetadata(), array("link"=>$clientLink)));  
+    ->render(array_merge(GetClient()->getUserMetadata(), array("link"=>$clientLink)));  
     
 GetPlugin('Email')->getMailer()
     ->mail($subject, $body)
