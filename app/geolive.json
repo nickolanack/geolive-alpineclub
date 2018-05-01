@@ -435,6 +435,24 @@
                     "maxWidth": 92,
                     "limit": 1
                 },
+                "edit": {
+                    "type": "images",
+                    "name": "edit",
+                    "default": [],
+                    "label": "edit",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
+                "delete": {
+                    "type": "images",
+                    "name": "delete",
+                    "default": [],
+                    "label": "delete",
+                    "maxHeight": 92,
+                    "maxWidth": 92,
+                    "limit": 1
+                },
                 "auth": {
                     "type": "images",
                     "name": "auth",
@@ -958,7 +976,9 @@
             ],
             "add-image-library": [
                 "components\/com_geolive\/users_files\/user_files_20\/Uploads\/aG9_[ImAgE]_v20_GPI_[G].png"
-            ]
+            ],
+            "edit": [],
+            "delete": []
         }
     },
     "widget.7": {
