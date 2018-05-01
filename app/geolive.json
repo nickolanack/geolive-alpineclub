@@ -1817,5 +1817,23 @@
             },
             "target": "deviceUserAttributes"
         }
+    },
+    "widget.42": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "activate-device-subject.contentTemplate.html",
+            "widgetTitle": "activate.device.subject",
+            "target": "activate.device.subject"
+        }
+    },
+    "widget.43": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "activate-device-body.contentTemplate.html",
+            "widgetTitle": "activate.device.body",
+            "target": "activate.device.body"
+        }
     }
 }
