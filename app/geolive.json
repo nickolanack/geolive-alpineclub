@@ -13,7 +13,7 @@
         "name": "Email",
         "instance": "Email",
         "parameters": {
-            "useSmtp": false,
+            "useSmtp": true,
             "smtpHost": "smtp.gmail.com",
             "username": "XXXX-XXXX",
             "password": "XXXX-XXXX",
