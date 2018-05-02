@@ -1876,5 +1876,12 @@
             "comments": "",
             "readAccess": "public"
         }
+    },
+    "widget.44": {
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
+        "parameters": {
+            "target": "map.1"
+        }
     }
 }
