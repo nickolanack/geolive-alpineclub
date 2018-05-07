@@ -53,3 +53,7 @@ main#content .side-bar-menu {
 .NearbyMapitemsModule>span {
     margin-right: 5px;
 }
+
+span.WizardFooter {
+    bottom: -48px;
+}
