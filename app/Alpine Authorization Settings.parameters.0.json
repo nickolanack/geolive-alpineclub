@@ -1,0 +1,6 @@
+{
+    "type": "boolean",
+    "name": "enableLive",
+    "default": false,
+    "label": "Enable Live Authrization"
+}

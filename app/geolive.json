@@ -1984,18 +1984,27 @@
             "comments": "",
             "formatParametersScript": "return $parameters;",
             "formatOutputScript": "return $parameters;",
-            "parameters": {
-                "hello": {
+            "parameters": [
+                "Alpine Authorization Settings.parameters.0.json",
+                {
                     "type": "text",
-                    "name": "hello",
-                    "placeholder": "example config field",
-                    "default": "World",
-                    "label": "Hello"
+                    "name": "liveAuthorizationSecretUrl",
+                    "default": "",
+                    "label": "Live Authorization Secret Url"
+                },
+                {
+                    "type": "text",
+                    "name": "textAuthorizationSecretUrl",
+                    "default": "",
+                    "label": "Test Authorization Secret Url"
                 }
-            },
+            ],
             "hello": "World",
             "widgetTitle": "Alpine Authorization Settings",
-            "readAccess": "public"
+            "readAccess": "public",
+            "enableLive": false,
+            "liveAuthorizationSecretUrl": "",
+            "textAuthorizationSecretUrl": ""
         }
     }
 }
