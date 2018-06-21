@@ -1974,5 +1974,12 @@
             "widgetTitle": "",
             "readAccess": "public"
         }
+    },
+    "widget.45": {
+        "name": "Configuration",
+        "instance": "Configuration",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
