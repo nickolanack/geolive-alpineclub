@@ -2011,9 +2011,10 @@
         "name": "Function",
         "instance": "UserFunction",
         "parameters": {
-            "widgetTitle": "",
-            "target": "none",
-            "customScript": ""
+            "widgetTitle": "Alpine Auth Function",
+            "target": "alpine-auth-function",
+            "customScript": "Alpine Auth Function.customScript.js",
+            "readAccess": "public"
         }
     }
 }
