@@ -1,5 +1,5 @@
 <?php
 
-Emit('onCheckAlpineAuth' array('args'=>func_get_args()));
+Emit('onCheckAlpineAuth', array('args'=>func_get_args()));
 
 ?>
