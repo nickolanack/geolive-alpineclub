@@ -1979,7 +1979,23 @@
         "name": "Configuration",
         "instance": "Configuration",
         "parameters": {
-            "target": "none"
+            "target": "none",
+            "contentTemplate": "",
+            "comments": "",
+            "formatParametersScript": "return $parameters;",
+            "formatOutputScript": "return $parameters;",
+            "parameters": {
+                "hello": {
+                    "type": "text",
+                    "name": "hello",
+                    "placeholder": "example config field",
+                    "default": "World",
+                    "label": "Hello"
+                }
+            },
+            "hello": "World",
+            "widgetTitle": "Alpine Authorization Settings",
+            "readAccess": "public"
         }
     }
 }
