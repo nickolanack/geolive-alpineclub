@@ -2003,8 +2003,8 @@
             "widgetTitle": "Alpine Authorization Settings",
             "readAccess": "public",
             "enableLive": false,
-            "liveAuthorizationSecretUrl": "",
-            "textAuthorizationSecretUrl": ""
+            "liveAuthorizationSecretUrl": "XXXX-XXXX",
+            "textAuthorizationSecretUrl": "XXXX-XXXX"
         }
     }
 }
