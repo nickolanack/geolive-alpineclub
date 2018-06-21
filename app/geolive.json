@@ -1979,7 +1979,7 @@
         "name": "Configuration",
         "instance": "Configuration",
         "parameters": {
-            "target": "none",
+            "target": "alpine-auth-config",
             "contentTemplate": "",
             "comments": "",
             "formatParametersScript": "return $parameters;",
