@@ -2006,5 +2006,14 @@
             "liveAuthorizationSecretUrl": "XXXX-XXXX",
             "textAuthorizationSecretUrl": "XXXX-XXXX"
         }
+    },
+    "widget.46": {
+        "name": "Function",
+        "instance": "UserFunction",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "customScript": ""
+        }
     }
 }
