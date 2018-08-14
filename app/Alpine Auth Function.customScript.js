@@ -47,6 +47,7 @@ if(!isset($email)){
 $client = new \GuzzleHttp\Client(array());
 
 $tokenResponse = $client->request('POST', $serverUrl.'/token', array(
+    'http_errors' => false,
     'form_params' => array(
         'grant_type'=>'password',
         'username'=>$serverUser, 
@@ -88,6 +89,7 @@ jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.u
 $validationResponse = $client->request('GET', 
     $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email), 
     array(
+        'http_errors' => false,
         'headers'=> array(
             'requestverificationtoken'=>$data->access_token,
             'accept'     => 'application/json',
