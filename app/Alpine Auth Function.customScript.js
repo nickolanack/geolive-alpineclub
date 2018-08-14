@@ -68,8 +68,9 @@ if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
     return;
 }
 
+die($data->access_token);
 
-$validationResponse = $client->request('POST', 
+$validationResponse = $client->request('GET', 
     $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email), 
     array(
         'headers'=> array(
