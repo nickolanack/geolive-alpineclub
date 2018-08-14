@@ -121,6 +121,7 @@ $validation=json_decode($validationResponse->getBody());
 
 $count=$validation->Count;
 $values=$validation->Items->{'$values'};
+print_r($values);
 $value=array_map(function($v){
     $item=array(
         'type'=>$v->EntityTypeName,
