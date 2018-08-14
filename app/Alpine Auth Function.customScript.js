@@ -27,7 +27,7 @@ if($config->getParameter('enableLive')){
     if(!isset($email)){
         //expect $email from argument
         $testAddresses=$config->getParameter('testAccountList');
-        $email=$testAddresses[rand(0, count($testAddresses)-1)];
+        $email='fake@notreal.com';//,$testAddresses[rand(0, count($testAddresses)-1)];
     }
     
 //}
@@ -36,7 +36,7 @@ if($config->getParameter('enableLive')){
 
 if(!isset($email)){
     Emit('onAttemptAlpineAuthError', array('message'=>'expected email address', 'args'=>func_get_args()));
-    return;
+    return false;
 }
 
 
@@ -78,7 +78,7 @@ $token=json_decode($tokenResponse->getBody());
 
 if(!($token&&key_exists('access_token', $token)&&(!empty($token->access_token)))){
     Emit('onAttemptAlpineAuthError', array('message'=>'Expected to receive server token from: '.$serverUrl, 'args'=>func_get_args()));
-    return;
+    return false;
 }
 
 
@@ -108,12 +108,22 @@ if(($status=$validationResponse->getStatusCode())!==200){
        ));
        
     print_r($error);
-   return; 
+   return false; 
 }
 
 $validation=json_decode($validationResponse->getBody());
 
 $count=$validation->Count;
+if($count!=1){
+    
+    Emit('onAttemptAlpineAuthError', $error=array(
+       'message'=>'Expected 1 result:',
+       ));
+       
+    print_r($error);
+    return false; 
+    
+}
 $values=$validation->Items->{'$values'};
 print_r($values);
 $value=array_map(function($v){
