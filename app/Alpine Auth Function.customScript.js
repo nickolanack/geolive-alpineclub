@@ -64,7 +64,7 @@ if(($status=$tokenResponse->getStatusCode())!==200){
 $data=json_decode($tokenResponse->getBody());
 
 if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
-    Emit('onAttemptAlpineAuthError', array('message'=>'Expected to recieve server token from: '.$serverUrl, 'args'=>func_get_args()));
+    Emit('onAttemptAlpineAuthError', array('message'=>'Expected to receive server token from: '.$serverUrl, 'args'=>func_get_args()));
     return;
 }
 
