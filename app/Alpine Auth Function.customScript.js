@@ -71,7 +71,7 @@ if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
 die('
 
 
-jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email).'", {
+jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.urlencode($email).'", {
   type: "GET",
   contentType: "application/json",
   headers: {
@@ -86,7 +86,7 @@ jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parame
 ');
 
 $validationResponse = $client->request('GET', 
-    $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email), 
+    $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.urlencode($email), 
     array(
         'headers'=> array(
             'RequestVerificationToken'=>$data->access_token,
