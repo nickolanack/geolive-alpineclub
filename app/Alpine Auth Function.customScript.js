@@ -27,7 +27,7 @@ if($config->getParameter('enableLive')){
     if(!isset($email)){
         //expect $email from argument
         $testAddresses=$config->getParameter('testAccountList');
-        $email='fake@notreal.com';//,$testAddresses[rand(0, count($testAddresses)-1)];
+        $email=$testAddresses[rand(0, count($testAddresses)-1)];
     }
     
 //}
@@ -131,7 +131,7 @@ if($count!=1){
     
 }
 $values=$validation->Items->{'$values'};
-print_r($values);
+//print_r($values);
 $value=array_map(function($v){
     $item=array(
         'type'=>$v->EntityTypeName,
@@ -150,12 +150,12 @@ $value=array_map(function($v){
     return $item;
 }, $values);
 
-$result=array(
+$validation=array(
     'email'=>$email,
-    'result'=>$value
+    'result'=>$value[0]
     );
 
-print_r($result);
+print_r($validation);
 
 
 
