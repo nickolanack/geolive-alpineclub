@@ -43,12 +43,7 @@ if(!isset($email)){
 
 
 
-die(print_r(array(
-        'grant_type'=>'password',
-        'username'=>$serverUser, 
-        'password'=>$serverPass
-    )));
-$client = new \GuzzleHttp\Client();
+$client = new \GuzzleHttp\Client(array());
 
 $response = $client->request('POST', $serverUrl.'/token', array(
     'form_params' => array(
