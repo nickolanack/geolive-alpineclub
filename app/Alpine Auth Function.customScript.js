@@ -67,7 +67,9 @@ if(($status=$tokenResponse->getStatusCode())!==200){
        'url'=>$tokenUrl,
        'message'=>'Token Response: '.$status,
        'args'=>func_get_args(),
-       'response'=>$tokenResponse->getBody().""
+       'response'=>$tokenResponse->getBody()."",
+       'user'=>$serverUser,
+       'pass'=>$serverPass
        ));
        
     print_r($error);
