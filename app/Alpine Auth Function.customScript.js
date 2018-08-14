@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  call this function with
+ *  call this function like:    ->userFunction($email);
  */
  
  
@@ -35,6 +35,7 @@ if($config->getParameter('enableLive')){
 
 if(!isset($email)){
     Emit('onAttemptAlpineAuthError', array('message'=>'expected email address', 'args'=>func_get_args()));
+    return;
 }
 
 
@@ -45,7 +46,7 @@ if(!isset($email)){
 
 $client = new \GuzzleHttp\Client(array());
 
-$response = $client->request('POST', $serverUrl.'/token', array(
+$tokenResponse = $client->request('POST', $serverUrl.'/token', array(
     'form_params' => array(
         'grant_type'=>'password',
         'username'=>$serverUser, 
@@ -54,15 +55,29 @@ $response = $client->request('POST', $serverUrl.'/token', array(
 ));
 
 
-if(($status=$response->getStatusCode())!==200){
+if(($status=$tokenResponse->getStatusCode())!==200){
 
    Emit('onAttemptAlpineAuthError', array('message'=>'Token Response: '.$status, 'args'=>func_get_args()));
    return; 
 }
 
-$data=json_decode($response->getBody());
-echo $data->access_token;
+$data=json_decode($tokenResponse->getBody());
 
+if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
+    Emit('onAttemptAlpineAuthError', array('message'=>'Expected to recieve server token from: '.$serverUrl, 'args'=>func_get_args()));
+    return;
+}
+
+
+$validationResponse = $client->request('POST', $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.url_encode($email), 
+    array(
+    'headers'=> array(
+        'RequestVerificationToken: '.$data->access_token.';'
+    )
+    
+));
+
+echo $validationResponse->getBody().'';
 
 
 
