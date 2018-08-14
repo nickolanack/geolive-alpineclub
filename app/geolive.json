@@ -2043,7 +2043,7 @@
             "hello": "World",
             "widgetTitle": "Alpine Authorization Settings",
             "readAccess": "public",
-            "enableLive": false,
+            "enableLive": true,
             "liveAuthorizationSecretUrl": "XXXX-XXXX",
             "textAuthorizationSecretUrl": "XXXX-XXXX",
             "liveAuthorizationUsername": "XXXX-XXXX",
