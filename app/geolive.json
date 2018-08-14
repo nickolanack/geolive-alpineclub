@@ -2005,9 +2005,33 @@
                 },
                 {
                     "type": "text",
-                    "name": "textAuthorizationSecretUrl",
+                    "name": "liveAuthorizationUsername",
+                    "default": "",
+                    "label": "Live Authorization Username"
+                },
+                {
+                    "type": "text",
+                    "name": "liveAuthorizationPassword",
+                    "default": "",
+                    "label": "Live Authorization Password"
+                },
+                {
+                    "type": "text",
+                    "name": "testAuthorizationSecretUrl",
                     "default": "",
                     "label": "Test Authorization Secret Url"
+                },
+                {
+                    "type": "text",
+                    "name": "testAuthorizationUsername",
+                    "default": "",
+                    "label": "Test Authorization Username"
+                },
+                {
+                    "type": "text",
+                    "name": "testAuthorizationPassword",
+                    "default": "",
+                    "label": "Test Authorization Password"
                 }
             ],
             "hello": "World",
@@ -2015,7 +2039,12 @@
             "readAccess": "public",
             "enableLive": false,
             "liveAuthorizationSecretUrl": "XXXX-XXXX",
-            "textAuthorizationSecretUrl": "XXXX-XXXX"
+            "textAuthorizationSecretUrl": "XXXX-XXXX",
+            "liveAuthorizationUsername": "XXXX-XXXX",
+            "liveAuthorizationPassword": "XXXX-XXXX",
+            "testAuthorizationSecretUrl": "XXXX-XXXX",
+            "testAuthorizationUsername": "XXXX-XXXX",
+            "testAuthorizationPassword": "XXXX-XXXX"
         }
     },
     "widget.46": {
@@ -2026,6 +2055,15 @@
             "target": "alpine-auth-function",
             "customScript": "Alpine Auth Function.customScript.js",
             "readAccess": "public"
+        }
+    },
+    "widget.47": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "Error",
+            "widgetTitle": "site.error.html",
+            "target": "site.error.html"
         }
     }
 }
