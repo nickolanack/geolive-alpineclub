@@ -94,6 +94,11 @@ jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.u
 ');
 */
 $validationUrl= $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email);
+
+$client = new \GuzzleHttp\Client(array(
+    'cookies'=> $cookies    
+));
+
 $validationResponse = $client->request('GET', 
     $validationUrl, 
     array(
