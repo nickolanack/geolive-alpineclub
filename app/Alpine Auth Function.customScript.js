@@ -50,7 +50,8 @@ $client = new \GuzzleHttp\Client(array(
  
 ));
 
-$tokenResponse = $client->request('POST', $serverUrl.'/token', array(
+$tokenUrl=$serverUrl.'/token';
+$tokenResponse = $client->request('POST', , array(
     'http_errors' => false,
     'form_params' => array(
         'grant_type'=>'password',
@@ -63,6 +64,7 @@ $tokenResponse = $client->request('POST', $serverUrl.'/token', array(
 if(($status=$tokenResponse->getStatusCode())!==200){
 
    Emit('onAttemptAlpineAuthError', array(
+       'url'=>$tokenUrl,
        'message'=>'Token Response: '.$status,
        'args'=>func_get_args(),
        'response'=>$tokenResponse->getBody()
