@@ -119,7 +119,7 @@ if(($status=$validationResponse->getStatusCode())!==200){
 
 $validation=json_decode($validationResponse->getBody());
 
-print_r$validation);
+print_r($validation);
 
 
 
