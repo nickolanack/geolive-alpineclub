@@ -207,6 +207,22 @@
         "instance": "PusherMessages",
         "parameters": "_PusherMessages.json"
     },
+    "plugin.22": {
+        "name": "Keen I O",
+        "instance": "KeenIO",
+        "parameters": {
+            "enabled": true,
+            "projectId": "",
+            "writeKey": "",
+            "readKey": "",
+            "ignoreEvents": [
+                "onManipulateMap",
+                "onDisplayView",
+                "onDisplayMap"
+            ],
+            "eventPrefix": ""
+        }
+    },
     "widget.1": {
         "name": "Content",
         "instance": "CustomContent",
