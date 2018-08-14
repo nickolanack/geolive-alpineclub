@@ -60,8 +60,7 @@ if(($status=$response->getStatusCode())!==200){
    return; 
 }
 
-print_r($response->getBody()."");
-
-echo "Args: ".json_encode(func_get_args());
+$data=json_decode($response->getBody());
+echo $data->token;;
 
 ?>
