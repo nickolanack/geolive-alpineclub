@@ -46,9 +46,7 @@ if(!isset($email)){
 
 
 
-$client = new \GuzzleHttp\Client(array(
- 
-));
+$client = new \GuzzleHttp\Client();
 
 $tokenUrl=$serverUrl.'/token';
 $tokenResponse = $client->request('POST', $tokenUrl, array(
