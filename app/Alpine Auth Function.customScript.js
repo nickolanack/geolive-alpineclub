@@ -119,7 +119,18 @@ if(($status=$validationResponse->getStatusCode())!==200){
 
 $validation=json_decode($validationResponse->getBody());
 
-print_r($validation);
+$count=$validation->Count;
+$values=$validation->Items->{'$values'};
+$value=array_map(function($v){
+    $item=array(
+        'type'=>$v->EntityTypeName,
+    );
+    foreach($v->Properties->{'$values'} as $p){
+        $item[$p->Name]=$p->Value->{'$value'};
+    }
+    return $item;
+}, $values);
+print_r();
 
 
 
