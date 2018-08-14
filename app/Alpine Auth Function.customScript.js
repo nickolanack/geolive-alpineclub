@@ -31,7 +31,7 @@ if($config->getParameter('enableLive')){
     
 }
 
-die('ok');
+
 
 if(!isset($email)){
     Emit('onAttemptAlpineAuthError', array('message'=>'expected email address', 'args'=>func_get_args()));
@@ -52,6 +52,8 @@ $response = $client->request('POST', $serverUrl.'/token', array(
         'password'=>$serverPass
     )
 ));
+
+die('ok');
 
 if(($status=$response->getStatusCode())!==200){
 
