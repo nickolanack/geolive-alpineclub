@@ -98,11 +98,11 @@ $validationResponse = $client->request('GET',
     array(
         'http_errors' => false,
         'headers'=> array(
-            'requestVerificationToken'=>$data->access_token,
+            'request-verification-token'=>$data->access_token,
             'accept'     => 'application/json',
             'origin' => 'https://www.alpineclubofcanada.ca',
             
-           
+            
 			'accept-encoding'=>'gzip, deflate, br',
 			'accept-language'=>'en-US,en;q=0.9,fr;q=0.8',
 			'cache-control'=>' max-age=0',
