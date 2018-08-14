@@ -44,7 +44,12 @@ if(!isset($email)){
 
 
 
-$client = new \GuzzleHttp\Client(array());
+$cookies=new \GuzzleHttp\Cookie\FileCookieJar('cookies.txt');
+	
+
+$client = new \GuzzleHttp\Client(array(
+    'cookies'=> $cookies    
+));
 
 $tokenResponse = $client->request('POST', $serverUrl.'/token', array(
     'http_errors' => false,
@@ -91,7 +96,7 @@ $validationResponse = $client->request('GET',
     array(
         'http_errors' => false,
         'headers'=> array(
-            'requestverificationtoken'=>$data->access_token,
+            'requestVerificationToken'=>$data->access_token,
             'accept'     => 'application/json',
             'origin' => 'https://www.alpineclubofcanada.ca',
             
