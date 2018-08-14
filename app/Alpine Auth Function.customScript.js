@@ -84,9 +84,6 @@ if(!($token&&key_exists('access_token', $token)&&(!empty($token->access_token)))
 
 $validationUrl= $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email);
 
-
-
-
 $validationResponse = $client->request('GET', $validationUrl,   
     
     array(
@@ -94,7 +91,6 @@ $validationResponse = $client->request('GET', $validationUrl,
         'headers'=> $headers=array(
             //'RequestVerificationToken'=>$token->access_token,
             'Authorization'=> "Bearer ".$token->access_token
-            //'Content-Type'=>' Application/Json
         )
     )
 );
@@ -137,7 +133,13 @@ $value=array_map(function($v){
     }
     return $item;
 }, $values);
-print_r($value);
+
+$result=array(
+    'email'=>$email
+    'result'=>$value
+    );
+
+print_r($result);
 
 
 
