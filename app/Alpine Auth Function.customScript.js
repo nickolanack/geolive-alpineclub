@@ -86,12 +86,20 @@ jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.u
 ');
 */
 $validationResponse = $client->request('GET', 
-    $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.urlencode($email), 
+    $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email), 
     array(
         'headers'=> array(
-            'RequestVerificationToken'=>$data->access_token,
-            'Accept'     => 'application/json',
-            'Origin' => 'https://www.alpineclubofcanada.ca'
+            'requestverificationtoken'=>$data->access_token,
+            'accept'     => 'application/json',
+            'origin' => 'https://www.alpineclubofcanada.ca',
+            
+           
+			'accept-encoding'=>'gzip, deflate, br',
+			'accept-language'=>'en-US,en;q=0.9,fr;q=0.8',
+			'cache-control'=>' max-age=0',
+
+			'upgrade-insecure-requests'=>'1',
+			'user-agent'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
         )
     )
 );
