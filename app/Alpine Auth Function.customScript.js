@@ -44,11 +44,9 @@ if(!isset($email)){
 
 
 
-$cookies=new \GuzzleHttp\Cookie\FileCookieJar(__DIR__.'/cookies.txt');
-	
 
 $client = new \GuzzleHttp\Client(array(
-    'cookies'=> $cookies    
+ 
 ));
 
 $tokenResponse = $client->request('POST', $serverUrl.'/token', array(
@@ -95,9 +93,7 @@ jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.u
 */
 $validationUrl= $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email);
 
-$client = new \GuzzleHttp\Client(array(
-    'cookies'=> $cookies    
-));
+
 
 $request = new \GuzzleHttp\Psr7\Request('GET', $validationUrl);
 
