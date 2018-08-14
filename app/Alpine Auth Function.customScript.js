@@ -13,6 +13,8 @@ $serverUrl=$config->getParameter('testAuthorizationSecretUrl');
 $serverUser=$config->getParameter('testAuthorizationUsername');
 $serverPass=$config->getParameter('testAuthorizationPassword');
 
+die('ok');
+
 if($config->getParameter('enableLive')){
     
     $serverUrl=$config->getParameter('liveAuthorizationSecretUrl');
