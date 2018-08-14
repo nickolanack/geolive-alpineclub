@@ -91,6 +91,7 @@ $validationResponse = $client->request('GET',
         'headers'=> array(
             'RequestVerificationToken'=>$data->access_token,
             'Accept'     => 'application/json',
+            'Origin' => 'https://www.alpineclubofcanada.ca'
         )
     )
 );
