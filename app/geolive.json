@@ -2051,7 +2051,16 @@
             "testAuthorizationSecretUrl": "XXXX-XXXX",
             "testAuthorizationUsername": "XXXX-XXXX",
             "testAuthorizationPassword": "XXXX-XXXX",
-            "testAccountList": []
+            "testAccountList": [
+                "nickblackwell82@gmail.com",
+                "nickblackwell82+1@gmail.com",
+                "nickblackwell82+2@gmail.com",
+                "nickblackwell82+3@gmail.com",
+                "nickblackwell82+4@gmail.com",
+                "nickblackwell82+5@gmail.com",
+                "nickblackwell82+6@gmail.com",
+                "nickblackwell82+7@gmail.com"
+            ]
         }
     },
     "widget.46": {
