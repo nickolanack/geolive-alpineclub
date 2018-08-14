@@ -3,38 +3,55 @@
 /**
  *  call this function with
  */
-
-
-$testAddresses=array(
-    'nickblackwell82@gmail.com',
-    'nickblackwell82+1@gmail.com',
-    'nickblackwell82+2@gmail.com',
-    'nickblackwell82+3@gmail.com',
-    'nickblackwell82+4@gmail.com',
-    'nickblackwell82+5@gmail.com',
-    'nickblackwell82+6@gmail.com',
-    'nickblackwell82+7@gmail.com',
-);
-
-
+ 
+ 
 Emit('onAttemptAlpineAuth', array('args'=>func_get_args()));
+ 
+$config=GetWidget('alpine-auth-config');
+
+$serverUrl=$config->getParameter('testAuthorizationSecretUrl');
+$serverUser=$config->getParameter('testAuthorizationUsername');
+$serverPass=$config->getParameter('testAuthorizationPassword');
+
+if($config->getParameter('enableLive')){
+    
+    $serverUrl=$config->getParameter('liveAuthorizationSecretUrl');
+    $serverUser=$config->getParameter('liveAuthorizationUsername');
+    $serverPass=$config->getParameter('liveAuthorizationPassword');
+    
+}else{
+    
+    if(!isset($email)){
+        //expect $email from argument
+        $testAddresses=$config->getParameter('testAccountList');
+        $email=$testAddresses[rand(0, count($testAddresses)-1)];
+    }
+    
+}
+
+if(!isset($email)){
+    Emit('onAttemptAlpineAuthError', array('message'=>'expected email address', 'args'=>func_get_args()));
+}
+
+
+
+
 
 
 
 $client = new \GuzzleHttp\Client();
 
-$response = $client->request('POST', 'https://www.alpineclubofcanada.ca/Asi.Scheduler_DEV/token', array(
+$response = $client->request('POST', $serverUrl.'/token', array(
     'form_params' => array(
         'grant_type'=>'password',
-        'username'=>'', 
-        'password'=>''
+        'username'=>$serverUser, 
+        'password'=>$serverPass
     )
 ));
 
-if($response->getStatusCode()!==200){
+if(($status=$response->getStatusCode())!==200){
 
-   Emit('onAttemptAlpineAuth', array('args'=>func_get_args()));
-
+   Emit('onAttemptAlpineAuthError', array('message'=>'Token Response: '.$status, 'args'=>func_get_args()));
    return; 
 }
 
