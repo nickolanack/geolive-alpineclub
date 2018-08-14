@@ -44,7 +44,7 @@ if(!isset($email)){
 
 
 
-$cookies=new \GuzzleHttp\Cookie\FileCookieJar('cookies.txt');
+$cookies=new \GuzzleHttp\Cookie\FileCookieJar(__DIR__.'/cookies.txt');
 	
 
 $client = new \GuzzleHttp\Client(array(
