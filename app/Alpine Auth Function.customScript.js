@@ -131,7 +131,7 @@ $value=array_map(function($v){
             $item[$p->Name]=null;
             continue;
         }
-        if(!is_object('Value', $p)){
+        if(!is_object($p->Value)){
             $item[$p->Name]=$p->Value;
             continue;
         }
