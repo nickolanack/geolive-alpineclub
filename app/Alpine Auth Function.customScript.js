@@ -69,16 +69,16 @@ if(($status=$tokenResponse->getStatusCode())!==200){
        'args'=>func_get_args(),
        'response'=>$tokenResponse->getBody()."",
        'user'=>$serverUser,
-       'pass'=>$serverPass
+       'pass'=>'XXX-XXXX'
        ));
        
     print_r($error);
    return; 
 }
 
-$data=json_decode($tokenResponse->getBody());
+$token=json_decode($tokenResponse->getBody());
 
-if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
+if(!($token&&key_exists('access_token', $token)&&(!empty($token->access_token)))){
     Emit('onAttemptAlpineAuthError', array('message'=>'Expected to receive server token from: '.$serverUrl, 'args'=>func_get_args()));
     return;
 }
@@ -94,18 +94,35 @@ $validationResponse = $client->request('GET', $validationUrl,
     array(
         'http_errors' => false,
         'headers'=> $headers=array(
-            //'RequestVerificationToken'=>$data->access_token,
-            'Authorization'=> "Bearer ".$data->access_token
+            //'RequestVerificationToken'=>$token->access_token,
+            'Authorization'=> "Bearer ".$token->access_token
             //'Content-Type'=>' Application/Json
         )
     )
 );
 
 
-echo $validationUrl."\n";
-print_r($headers);
-echo "\n";
-echo $validationResponse->getBody()."\n";
+if(($status=$validationResponse->getStatusCode())!==200){
+
+   Emit('onAttemptAlpineAuthError', $error=array(
+       'url'=>$tokenUrl,
+       'message'=>'Validation Response: '.$status,
+       'args'=>func_get_args(),
+       'response'=>$validationResponse->getBody()."",
+       'user'=>$serverUser,
+       'pass'=>'XXX-XXXX'
+       ));
+       
+    print_r($error);
+   return; 
+}
+
+$validation=json_decode($validationResponse->getBody());
+
+print_r$validation);
+
+
+
 
 
 
