@@ -99,7 +99,7 @@ $client = new \GuzzleHttp\Client(array(
     'cookies'=> $cookies    
 ));
 
-$request = $client->createRequest('GET', $validationUrl);
+$request = new \GuzzleHttp\Psr7\Request('GET', $validationUrl);
 
 $request->addHeader('RequestVerificationToken', $data->access_token);
 $request->addHeader('Content-Type', 'application\json');
