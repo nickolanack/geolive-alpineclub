@@ -61,6 +61,11 @@ if(($status=$response->getStatusCode())!==200){
 }
 
 $data=json_decode($response->getBody());
-echo $data->token;;
+echo $data->access_token;
+
+
+
+
+
 
 ?>
