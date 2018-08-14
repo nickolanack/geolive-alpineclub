@@ -135,7 +135,7 @@ $value=array_map(function($v){
 }, $values);
 
 $result=array(
-    'email'=>$email
+    'email'=>$email,
     'result'=>$value
     );
 
