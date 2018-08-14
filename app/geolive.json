@@ -2032,6 +2032,12 @@
                     "name": "testAuthorizationPassword",
                     "default": "",
                     "label": "Test Authorization Password"
+                },
+                {
+                    "type": "json",
+                    "name": "testAccountList",
+                    "default": [],
+                    "label": "Test Account List"
                 }
             ],
             "hello": "World",
@@ -2044,7 +2050,8 @@
             "liveAuthorizationPassword": "XXXX-XXXX",
             "testAuthorizationSecretUrl": "XXXX-XXXX",
             "testAuthorizationUsername": "XXXX-XXXX",
-            "testAuthorizationPassword": "XXXX-XXXX"
+            "testAuthorizationPassword": "XXXX-XXXX",
+            "testAccountList": []
         }
     },
     "widget.46": {
