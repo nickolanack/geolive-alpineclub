@@ -257,10 +257,12 @@
         "name": "Flexible Height Widget",
         "instance": "FlexibleHeight",
         "parameters": {
-            "offset": 225,
-            "customScript": "",
             "widgetTitle": "",
             "target": "map.1",
+            "offset": 225,
+            "maxHeight": "1000",
+            "minHeight": "400",
+            "customScript": "",
             "readAccess": "public"
         }
     },
@@ -1053,7 +1055,9 @@
             "target": "map.1",
             "templateName": "default",
             "requireTarget": true,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1325,7 +1329,9 @@
             "target": "mainView",
             "templateName": "mainView",
             "requireTarget": false,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "mainView.onRenderApplictionScript.js",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1476,7 +1482,9 @@
             "target": "featuredItems",
             "templateName": "featuredItems",
             "requireTarget": false,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1541,7 +1549,9 @@
             "target": "featuredItemDetail",
             "templateName": "featuredItemDetail",
             "requireTarget": true,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1881,7 +1891,16 @@
         "name": "Generic Wizard",
         "instance": "WizardBuilder",
         "parameters": {
+            "widgetTitle": "",
             "target": "map.1",
+            "templateName": "MapItemTemplate",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -1964,14 +1983,6 @@
                     }
                 ]
             },
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
-            "requireTarget": true,
-            "templateName": "MapItemTemplate",
-            "widgetTitle": "",
             "readAccess": "public"
         }
     },
