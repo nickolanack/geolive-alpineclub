@@ -43,6 +43,7 @@ if(!isset($email)){
 
 
 
+die('ok');
 $client = new \GuzzleHttp\Client();
 
 $response = $client->request('POST', $serverUrl.'/token', array(
@@ -53,7 +54,6 @@ $response = $client->request('POST', $serverUrl.'/token', array(
     )
 ));
 
-die('ok');
 
 if(($status=$response->getStatusCode())!==200){
 
