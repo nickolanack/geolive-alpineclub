@@ -130,9 +130,9 @@ if($count!=1){
     return false; 
     
 }
-$values=$validation->Items->{'$values'};
-//print_r($values);
-$value=array_map(function($v){
+    $v=$validation->Items->{'$values'}[0];
+    //print_r($values);
+
     $item=array(
         'type'=>$v->EntityTypeName,
     );
@@ -147,12 +147,12 @@ $value=array_map(function($v){
         }
         $item[$p->Name]=$p->Value->{'$value'};
     }
-    return $item;
-}, $values);
+
+
 
 $validation=array(
     'email'=>$email,
-    'result'=>$value[0]
+    'result'=>$item
     );
 
 print_r($validation);
