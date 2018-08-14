@@ -112,7 +112,8 @@ $validationResponse = $client->request('GET', $validationUrl,
     array(
         'http_errors' => false,
         'headers'=> $headers=array(
-            'requestVerificationToken'=>$data->access_token
+            'RequestVerificationToken'=>$data->access_token,
+            'Content-Type'=>' Application/Json'
         )
     )
 );
