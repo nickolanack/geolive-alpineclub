@@ -51,7 +51,7 @@ $client = new \GuzzleHttp\Client(array(
 ));
 
 $tokenUrl=$serverUrl.'/token';
-$tokenResponse = $client->request('POST', , array(
+$tokenResponse = $client->request('POST', $tokenUrl, array(
     'http_errors' => false,
     'form_params' => array(
         'grant_type'=>'password',
