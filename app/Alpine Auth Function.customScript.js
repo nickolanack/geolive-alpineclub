@@ -99,24 +99,15 @@ $request = new \GuzzleHttp\Psr7\Request('GET', $validationUrl);
 
 $request->addHeader('RequestVerificationToken', $data->access_token);
 $request->addHeader('Content-Type', 'application\json');
-$validationResponse = $client->send($request);   
-//     , 
-//     array(
-//         'http_errors' => false,
-//         'headers'=> $headers=array(
-//             'request-verification-token'=>$data->access_token,
-//             'accept'     => 'application/json',
-//             'origin' => 'https://www.alpineclubofcanada.ca',
-            
-// 			'accept-encoding'=>'gzip, deflate, br',
-// 			'accept-language'=>'en-US,en;q=0.9,fr;q=0.8',
-// 			'cache-control'=>' max-age=0',
-
-// 			'upgrade-insecure-requests'=>'1',
-// 			'user-agent'=>'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
-//         )
-//     )
-// );
+$validationResponse = $client->request('GET', $validationUrl,   
+    
+    array(
+        'http_errors' => false,
+        'headers'=> $headers=array(
+            'requestVerificationToken'=>$data->access_token
+        )
+    )
+);
 
 
 echo $validationUrl."\n";
