@@ -74,7 +74,7 @@ if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
     return;
 }
 
-die(print_r($data));
+//die(print_r($data));
 
 
 /*
