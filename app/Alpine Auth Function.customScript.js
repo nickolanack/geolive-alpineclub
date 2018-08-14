@@ -21,7 +21,8 @@ if($config->getParameter('enableLive')){
     $serverUser=$config->getParameter('liveAuthorizationUsername');
     $serverPass=$config->getParameter('liveAuthorizationPassword');
     
-}else{
+}
+//else{
     
     if(!isset($email)){
         //expect $email from argument
@@ -29,7 +30,7 @@ if($config->getParameter('enableLive')){
         $email=$testAddresses[rand(0, count($testAddresses)-1)];
     }
     
-}
+//}
 
 
 
