@@ -74,7 +74,8 @@ $validationResponse = $client->request('GET',
     $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parameter='.urlencode($email), 
     array(
         'headers'=> array(
-            'RequestVerificationToken'=>$data->access_token
+            'RequestVerificationToken'=>$data->access_token,
+            'Accept'     => 'application/json',
         )
     )
 );
