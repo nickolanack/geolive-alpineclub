@@ -2059,7 +2059,7 @@
             "hello": "World",
             "widgetTitle": "Alpine Authorization Settings",
             "readAccess": "public",
-            "enableLive": true,
+            "enableLive": false,
             "liveAuthorizationSecretUrl": "XXXX-XXXX",
             "textAuthorizationSecretUrl": "XXXX-XXXX",
             "liveAuthorizationUsername": "XXXX-XXXX",
