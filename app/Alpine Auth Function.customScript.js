@@ -73,9 +73,11 @@ if(!($data&&key_exists('access_token', $data)&&(!empty($data->access_token)))){
     Emit('onAttemptAlpineAuthError', array('message'=>'Expected to receive server token from: '.$serverUrl, 'args'=>func_get_args()));
     return;
 }
-/*
-die('
 
+die(print_r($data));
+
+
+/*
 
 jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp&Parameter='.urlencode($email).'", {
   type: "GET",
