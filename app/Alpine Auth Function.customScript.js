@@ -5,7 +5,7 @@
  */
  
  
-Emit('onAttemptAlpineAuth', array('args'=>func_get_args()));
+Emit('onAlpineAuthAttempt', array('args'=>func_get_args()));
  
 $config=GetWidget('alpine-auth-config');
 
@@ -35,7 +35,7 @@ if($config->getParameter('enableLive')){
 
 
 if(!isset($email)){
-    Emit('onAttemptAlpineAuthError', array('message'=>'expected email address', 'args'=>func_get_args()));
+    Emit('onAlpineAuthAttemptError', array('message'=>'expected email address', 'args'=>func_get_args()));
     return false;
 }
 
@@ -61,7 +61,7 @@ $tokenResponse = $client->request('POST', $tokenUrl, array(
 
 if(($status=$tokenResponse->getStatusCode())!==200){
 
-   Emit('onAttemptAlpineAuthError', $error=array(
+   Emit('onAlpineAuthAttemptError', $error=array(
        'url'=>$tokenUrl,
        'message'=>'Token Response: '.$status,
        'args'=>func_get_args(),
@@ -77,7 +77,7 @@ if(($status=$tokenResponse->getStatusCode())!==200){
 $token=json_decode($tokenResponse->getBody());
 
 if(!($token&&key_exists('access_token', $token)&&(!empty($token->access_token)))){
-    Emit('onAttemptAlpineAuthError', array('message'=>'Expected to receive server token from: '.$serverUrl, 'args'=>func_get_args()));
+    Emit('onAlpineAuthAttemptError', array('message'=>'Expected to receive server token from: '.$serverUrl, 'args'=>func_get_args()));
     return false;
 }
 
@@ -98,7 +98,7 @@ $validationResponse = $client->request('GET', $validationUrl,
 
 if(($status=$validationResponse->getStatusCode())!==200){
 
-   Emit('onAttemptAlpineAuthError', $error=array(
+   Emit('onAlpineAuthAttemptError', $error=array(
        'url'=>$tokenUrl,
        'message'=>'Validation Response: '.$status,
        'args'=>func_get_args(),
@@ -113,11 +113,17 @@ if(($status=$validationResponse->getStatusCode())!==200){
 
 $validation=json_decode($validationResponse->getBody());
 
+if(is_object($validation)){
+    Emit('onAlpineAuthResonse', $error=array(
+       'validationData'=>$validation
+       ));
+}
+
 $count=$validation->Count;
 if($count!=1){
     
-    Emit('onAttemptAlpineAuthError', $error=array(
-       'message'=>'Expected 1 result:',
+    Emit('onAlpineAuthAttemptError', $error=array(
+       'message'=>'Expected 1 result',
        ));
        
     print_r($error);
