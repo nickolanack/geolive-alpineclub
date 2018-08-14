@@ -127,6 +127,10 @@ $value=array_map(function($v){
         'type'=>$v->EntityTypeName,
     );
     foreach($v->Properties->{'$values'} as $p){
+        if(!key_exists('Value', $p)){
+            $item[$p->Name]=null;
+            continue;
+        }
         $item[$p->Name]=$p->Value->{'$value'};
     }
     return $item;
