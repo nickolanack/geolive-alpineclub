@@ -95,10 +95,7 @@ $validationUrl= $serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Param
 
 
 
-$request = new \GuzzleHttp\Psr7\Request('GET', $validationUrl);
 
-$request->addHeader('RequestVerificationToken', $data->access_token);
-$request->addHeader('Content-Type', 'application\json');
 $validationResponse = $client->request('GET', $validationUrl,   
     
     array(
