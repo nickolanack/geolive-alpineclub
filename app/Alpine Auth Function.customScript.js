@@ -13,7 +13,7 @@ $serverUrl=$config->getParameter('testAuthorizationSecretUrl');
 $serverUser=$config->getParameter('testAuthorizationUsername');
 $serverPass=$config->getParameter('testAuthorizationPassword');
 
-die('ok');
+
 
 if($config->getParameter('enableLive')){
     
@@ -30,6 +30,8 @@ if($config->getParameter('enableLive')){
     }
     
 }
+
+die('ok');
 
 if(!isset($email)){
     Emit('onAttemptAlpineAuthError', array('message'=>'expected email address', 'args'=>func_get_args()));
