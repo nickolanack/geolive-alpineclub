@@ -63,12 +63,14 @@ $tokenResponse = $client->request('POST', $tokenUrl, array(
 
 if(($status=$tokenResponse->getStatusCode())!==200){
 
-   Emit('onAttemptAlpineAuthError', array(
+   Emit('onAttemptAlpineAuthError', $error=array(
        'url'=>$tokenUrl,
        'message'=>'Token Response: '.$status,
        'args'=>func_get_args(),
        'response'=>$tokenResponse->getBody()
        ));
+       
+    print_r($error);
    return; 
 }
 
