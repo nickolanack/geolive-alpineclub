@@ -131,6 +131,10 @@ $value=array_map(function($v){
             $item[$p->Name]=null;
             continue;
         }
+        if(!is_object('Value', $p)){
+            $item[$p->Name]=$p->Value;
+            continue;
+        }
         $item[$p->Name]=$p->Value->{'$value'};
     }
     return $item;
