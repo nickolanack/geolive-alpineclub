@@ -75,7 +75,7 @@ jQuery.ajax("'.$serverUrl.'/api/IQA?QueryName=$/ACC/Queries/MtnApp/MtnApp&Parame
   type: "GET",
   contentType: "application/json",
   headers: {
-    RequestVerificationToken: '.$data->access_token.'
+    RequestVerificationToken: "'.$data->access_token.'"
   },
   success: function(data) {
     console.log(data);
