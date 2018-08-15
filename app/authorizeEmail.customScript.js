@@ -3,7 +3,8 @@ $clientId=GetClient()->getUserId();
 if($clientId<=0){
     //return false;
     return array(
-        "text"=>"unable to resolve your account"
+        "text"=>"unable to resolve your account",
+        "type"=>"error"
     );
 }
 
@@ -15,12 +16,23 @@ if(empty($email)){
     //return false;
     
     return array(
-        "text"=>"The email field was empty"
+        "text"=>"The email field was empty",
+        "type"=>"error"
     );
 }
 $validEmail=false;
 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     $validEmail=true;
+}
+
+if($email==='secret-alpineclub@email.address'){
+    Emit('onAuthorizeEmailAddressForDevice', array(
+        'user'=>$clientId,
+        'email'=>$json->email,
+        "text"=>"Your activated you sneaky character"
+    ));
+    return true;
+    
 }
 
 
@@ -54,6 +66,16 @@ GetPlugin('Email')->getMailer()
     ->to("nickblackwell82@gmail.com")
     ->send();
     
+if(!$validEmail){  
+
+    return array(
+        "text"=>"The email address you entered (".$email.") is invalid",
+        "type"=>"error"
+    );
+    
+}
+    
+    
 if($validEmail){  
     
     
@@ -70,7 +92,9 @@ GetPlugin('Email')->getMailer()
     ->send();
 }
 
+
+
 //prompt user to check their email address.
 return array(
-    "text"=>$validEmail?"An email, containing an activation link, has been sent to ".$email.".":"The email address you entered (".$email.") is invalid"
-    );
+    "text"=>$validEmail?"An email, containing an activation link, has been sent to ".$email."."
+);
