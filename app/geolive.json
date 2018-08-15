@@ -1420,6 +1420,7 @@
             "target": "onAuthorizeEmailAddressForDevice",
             "customScript": "authorizeEmailAddressForDevice Event Handler.customScript.js",
             "language": "html\/text",
+            "returnsValue": false,
             "readAccess": "public"
         }
     },
@@ -1638,6 +1639,7 @@
             "target": "linkAccount",
             "customScript": "Link Account.customScript.js",
             "language": "html\/text",
+            "returnsValue": false,
             "readAccess": "public"
         }
     },
@@ -2089,6 +2091,7 @@
             "target": "alpine-auth-function",
             "customScript": "Alpine Auth Function.customScript.js",
             "language": "3",
+            "returnsValue": true,
             "readAccess": "public"
         }
     },
