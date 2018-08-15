@@ -37,6 +37,9 @@ if($email==='secret-alpineclub@email.address'){
 
 
 
+
+
+
 //store address in user attribute
 GetPlugin('Attributes');
 (new attributes\Record('deviceUserAttributes'))->setValues($clientId, 'user', array('authEmail'=>$email, 'authEmailStatus'=>'sent'));
@@ -75,6 +78,18 @@ if(!$validEmail){
     
 }
     
+    
+$auth=GetWidget('alpine-auth-function')->executeScript($email);
+if(!$auth){
+    return array(
+        "text"=>"Failed to authorize with The alpine Club of Canada",
+        "type"=>"error"
+    );
+}
+
+if(key_exists("type", $auth)&&type=="error"){
+    return $auth;
+}
     
 
     
