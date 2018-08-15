@@ -2058,6 +2058,12 @@
                     "name": "testAccountList",
                     "default": [],
                     "label": "Test Account List"
+                },
+                {
+                    "type": "text",
+                    "name": "testSecretEmail",
+                    "default": "test.secret@alpineclub.ca",
+                    "label": "testSecretEmail"
                 }
             ],
             "hello": "World",
@@ -2080,7 +2086,8 @@
                 "nickblackwell82+5@gmail.com",
                 "nickblackwell82+6@gmail.com",
                 "nickblackwell82+7@gmail.com"
-            ]
+            ],
+            "testSecretEmail": "XXXX-XXXX"
         }
     },
     "widget.46": {
