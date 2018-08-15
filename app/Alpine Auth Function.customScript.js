@@ -1,5 +1,3 @@
-<?php
-
 /**
  *  call this function like:    ->userFunction($email);
  */
@@ -155,13 +153,4 @@ $validation=array(
     'result'=>$item
     );
 
-print_r($validation);
-
-
-
-
-
-
-
-
-?>
+return $validation;
