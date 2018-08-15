@@ -2090,7 +2090,7 @@
             "widgetTitle": "Alpine Auth Function",
             "target": "alpine-auth-function",
             "customScript": "Alpine Auth Function.customScript.js",
-            "language": "3",
+            "language": "php",
             "returnsValue": true,
             "readAccess": "public"
         }
