@@ -102,7 +102,8 @@ if(($status=$validationResponse->getStatusCode())!==200){
        'args'=>func_get_args(),
        'response'=>$validationResponse->getBody()."",
        'user'=>$serverUser,
-       'pass'=>'XXX-XXXX'
+       'pass'=>'XXX-XXXX',
+       'email'=>$email
        ));
        
     print_r($error);
@@ -113,7 +114,8 @@ $validation=json_decode($validationResponse->getBody());
 
 if(is_object($validation)){
     Emit('onAlpineAuthResonse', $error=array(
-       'validationData'=>$validation
+       'validationData'=>$validation,
+       'email'=>$email
        ));
 }
 
@@ -122,6 +124,7 @@ if($count!=1){
     
     Emit('onAlpineAuthAttemptError', $error=array(
        'message'=>'Expected 1 result',
+       'email'=>$email
        ));
        
     print_r($error);
