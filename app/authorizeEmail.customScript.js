@@ -79,7 +79,7 @@ if(!$validEmail){
 }
     
     
-$auth=GetWidget('alpine-auth-function')->executeScript($email);
+$auth=GetWidget('alpine-auth-function')->executeScript(array('email'=>$email));
 if(!$auth){
     return array(
         "text"=>"Failed to authorize with The alpine Club of Canada",
