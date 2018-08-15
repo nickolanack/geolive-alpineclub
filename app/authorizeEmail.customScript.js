@@ -76,7 +76,7 @@ if(!$validEmail){
 }
     
     
-if($validEmail){  
+
     
     
 $subject=(new \core\Template(
@@ -90,7 +90,7 @@ GetPlugin('Email')->getMailer()
     ->mail($subject, $body)
     ->to($email)
     ->send();
-}
+
 
 
 
