@@ -77,7 +77,7 @@ GetPlugin('Apps')
         array(
             "data"=>array("authorized"=>true),
             "parameters"=>array("account-authorized"=>true),
-            "text"=>"Your account has been authorized",
+            "text"=>key_exists('text', $json)?$json->text:"Your account has been authorized",
             "logout"=>$userId!==$eventArgs->user
         )
     );
