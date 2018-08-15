@@ -156,7 +156,24 @@ $validation=array(
     'result'=>$item
 );
     
+if($item->email_count==0){
+    $validation['text']='The email address '.$email.' is not registered with The Alpine Club of Canada';
+    $validation['type']="error";
+}else{
     
+    $nullIsExpired=false;
+    if($nullIsExpired&&is_null($item->expiry)){
+        $validation['text']='The account for '.$email.' is expired';
+        $validation['type']="error";
+    }
+    
+    if((!is_null($item->expiry))&&strtotime($item->expiry)<time()){
+        $validation['text']='The account for '.$email.' is expired';
+        $validation['type']="error";
+    }
+    
+    
+}   
 
 
 Emit('onAlpineAuthEmail', $validation);
