@@ -2062,7 +2062,7 @@
                 {
                     "type": "text",
                     "name": "testSecretEmail",
-                    "default": "test.secret@alpineclub.ca",
+                    "default": "",
                     "label": "testSecretEmail"
                 }
             ],
