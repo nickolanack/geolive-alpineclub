@@ -88,7 +88,7 @@ if(!$auth){
     );
 }
 
-if(key_exists("type", $auth)&&type=="error"){
+if(key_exists("type", $auth)&&$auth['type']=="error"){
     return $auth;
 }
     
