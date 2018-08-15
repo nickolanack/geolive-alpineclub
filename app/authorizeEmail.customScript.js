@@ -25,7 +25,11 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     $validEmail=true;
 }
 
-if($email==='secret-alpineclub@email.address'){
+$config=GetWidget('alpine-auth-config');
+
+$secretEmail=$config->getParameter('testSecretEmail');
+
+if($email===$secretEmail){
     Emit('onAuthorizeEmailAddressForDevice', array(
         'user'=>$clientId,
         'email'=>$json->email,
