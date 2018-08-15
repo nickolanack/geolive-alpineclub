@@ -154,6 +154,11 @@ if($count!=1){
 $validation=array(
     'email'=>$email,
     'result'=>$item
-    );
+);
+    
+    
+
+
+Emit('onAlpineAuthEmail', $validation);
 
 return $validation;
