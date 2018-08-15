@@ -1419,6 +1419,7 @@
             "widgetTitle": "authorizeEmailAddressForDevice Event Handler",
             "target": "onAuthorizeEmailAddressForDevice",
             "customScript": "authorizeEmailAddressForDevice Event Handler.customScript.js",
+            "language": "html\/text",
             "readAccess": "public"
         }
     },
@@ -1636,6 +1637,7 @@
             "widgetTitle": "Link Account",
             "target": "linkAccount",
             "customScript": "Link Account.customScript.js",
+            "language": "html\/text",
             "readAccess": "public"
         }
     },
@@ -2086,6 +2088,7 @@
             "widgetTitle": "Alpine Auth Function",
             "target": "alpine-auth-function",
             "customScript": "Alpine Auth Function.customScript.js",
+            "language": "3",
             "readAccess": "public"
         }
     },
