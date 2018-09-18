@@ -80,7 +80,7 @@
             "CSSInlineObfuscationEnabled": false,
             "PHPDebugEnabled": true,
             "JSDebugEnabled": true,
-            "CachingEnabled": false,
+            "CachingEnabled": true,
             "ExternalizeWidgetScripts": true,
             "PrettyPrintJson": true,
             "showFrontEndEditButtons": true,
@@ -136,6 +136,7 @@
         "name": "Monolog Plugin",
         "instance": "Monolog",
         "parameters": {
+            "enabled": true,
             "logPath": "{front}\/..\/logs",
             "logToSentry": false
         }
