@@ -77,7 +77,7 @@
             "JSFileObfuscationEnabled": true,
             "JSInlineObfuscationEnabled": true,
             "CSSFileObfuscationEnabled": true,
-            "CSSInlineObfuscationEnabled": false,
+            "CSSInlineObfuscationEnabled": true,
             "PHPDebugEnabled": true,
             "JSDebugEnabled": true,
             "CachingEnabled": true,
