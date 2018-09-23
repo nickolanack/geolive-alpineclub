@@ -2108,9 +2108,11 @@
         "name": "Template",
         "instance": "Template",
         "parameters": {
-            "contentTemplate": "Error",
+            "contentTemplate": "site-error-html.contentTemplate.html",
             "widgetTitle": "site.error.html",
-            "target": "site.error.html"
+            "target": "site.error.html",
+            "comments": "",
+            "readAccess": "public"
         }
     }
 }
