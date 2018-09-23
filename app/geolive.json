@@ -147,7 +147,7 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/bb9c64946b61465786057d9d2ebfc92a@sentry.io\/214701",
-            "enabled": false
+            "enabled": true
         }
     },
     "plugin.17": {
