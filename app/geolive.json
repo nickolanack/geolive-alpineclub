@@ -2114,5 +2114,19 @@
             "comments": "",
             "readAccess": "public"
         }
+    },
+    "widget.48": {
+        "name": "Article",
+        "instance": "Article",
+        "parameters": {
+            "target": "none"
+        }
+    },
+    "widget.49": {
+        "name": "Article",
+        "instance": "Article",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
