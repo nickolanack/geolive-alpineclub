@@ -97,6 +97,7 @@ $validationResponse = $client->request('GET', $validationUrl,
 if(($status=$validationResponse->getStatusCode())!==200){
 
    Emit('onAlpineAuthAttemptError', $error=array(
+       'token'=>$token,
        'url'=>$tokenUrl,
        'message'=>'Validation Response: '.$status,
        'args'=>func_get_args(),
