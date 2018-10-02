@@ -29,6 +29,20 @@ $config=GetWidget('alpine-auth-config');
 
 $secretEmail=$config->getParameter('testSecretEmail');
 
+
+if(strpos($email, $secretEmail.":")===0){
+    $email=explode(':',$email);
+    $email=trim($email[1]);
+    
+    Emit('onAuthorizeEmailAddressForDevice', array(
+        'user'=>$clientId,
+        'email'=>$email,
+        "text"=>"Your activated you sneaky character"
+    ));
+    return true;
+    
+});
+
 if($email===$secretEmail){
     Emit('onAuthorizeEmailAddressForDevice', array(
         'user'=>$clientId,
