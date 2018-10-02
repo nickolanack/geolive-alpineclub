@@ -31,7 +31,7 @@ $secretEmail=$config->getParameter('testSecretEmail');
 
 
 if(strpos($email, $secretEmail.":")===0){
-    $email=explode(':',$email);
+    $email=explode(':', $email);
     $email=trim($email[1]);
     
     Emit('onAuthorizeEmailAddressForDevice', array(
@@ -41,7 +41,7 @@ if(strpos($email, $secretEmail.":")===0){
     ));
     return true;
     
-});
+}
 
 if($email===$secretEmail){
     Emit('onAuthorizeEmailAddressForDevice', array(
