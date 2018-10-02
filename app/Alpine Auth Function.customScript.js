@@ -98,7 +98,8 @@ if(($status=$validationResponse->getStatusCode())!==200){
 
    Emit('onAlpineAuthAttemptError', $error=array(
        'token'=>$token,
-       'url'=>$tokenUrl,
+       'token-url'=>$tokenUrl,
+       'validation-url'=>$validationUrl,
        'message'=>'Validation Response: '.$status,
        'args'=>func_get_args(),
        'response'=>$validationResponse->getBody()."",
