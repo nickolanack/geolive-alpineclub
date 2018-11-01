@@ -1,7 +1,7 @@
 <?php 
     $ua = strtolower($_SERVER['HTTP_USER_AGENT']);
     if(stripos($ua,'android') !== false) { // && stripos($ua,'mobile') !== false) {
-    	header('Location: https://play.google.com/store/');
+    	header('Location: https://play.google.com/store/apps/details?id=org.alpineclub.ca');
     	exit();
     }
     
