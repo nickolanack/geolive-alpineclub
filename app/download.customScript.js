@@ -6,7 +6,7 @@
     }
     
     if(stripos($ua,'iphone') !== false||stripos($ua,'ipod') !== false||stripos($ua,'ipad') !== false) { // && stripos($ua,'mobile') !== false) {
-    	header('Location: https://itunes.apple.com/ca/app/');
+    	header('Location: https://itunes.apple.com/ca/app/alpine-club-app/id1341882937?ls=1&mt=8');
     	exit();
     }
 

@@ -1481,7 +1481,9 @@
             "customScript": "download.customScript.js",
             "widgetTitle": "download",
             "target": "download",
-            "readAccess": "public"
+            "readAccess": "public",
+            "language": "html\/text",
+            "returnsValue": false
         }
     },
     "widget.34": {
